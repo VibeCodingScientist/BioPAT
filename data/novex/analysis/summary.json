@@ -1,0 +1,49 @@
+{
+  "benchmark": {
+    "num_statements": 300,
+    "num_corpus_docs": 164649,
+    "domains": {
+      "A61": 121,
+      "C07": 88,
+      "C12": 91
+    },
+    "categories": {
+      "papers_only": 33,
+      "both": 153,
+      "patents_only": 95,
+      "novel": 19
+    },
+    "difficulties": {
+      "medium": 300
+    },
+    "doc_types": {
+      "paper": 158850,
+      "patent": 5799
+    },
+    "tier1_qrels": 5352,
+    "tier2_qrels": 5352,
+    "tier3_labels": 300
+  },
+  "best_t1": {
+    "method": "bm25",
+    "model": "N/A",
+    "recall@100": 1.0,
+    "recall@100_ci_lower": 1.0,
+    "recall@100_ci_upper": 1.0
+  },
+  "best_t2": {
+    "method": "relevance",
+    "model": "claude-sonnet-4-6",
+    "weighted_kappa": 0.8732055564532544,
+    "weighted_kappa_ci_lower": 0.7697,
+    "weighted_kappa_ci_upper": 0.8077
+  },
+  "best_t3": {
+    "method": "novelty_ctx",
+    "model": "claude-sonnet-4-6",
+    "macro_f1": 0.7508010335917312,
+    "macro_f1_ci_lower": 0.7624,
+    "macro_f1_ci_upper": 0.9109
+  },
+  "total_cost": 384.1861570000005
+}

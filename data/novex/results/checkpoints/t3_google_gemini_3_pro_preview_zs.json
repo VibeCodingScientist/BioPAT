@@ -1,0 +1,1220 @@
+{
+  "tier": 3,
+  "method": "novelty_zs",
+  "model": "gemini-3-pro-preview",
+  "metrics": {
+    "accuracy": 0.06,
+    "macro_f1": 0.03773584905660377,
+    "f1_novel": 0.11320754716981131,
+    "f1_partially_anticipated": 0,
+    "f1_anticipated": 0
+  },
+  "per_query": {
+    "RN001": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN002": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN003": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN004": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN005": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN006": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN007": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN008": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN009": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN010": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN011": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN012": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN013": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN014": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN015": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN016": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN017": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN018": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN019": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN020": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN021": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN022": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN023": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN024": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN025": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN026": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN027": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN028": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN029": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN030": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN031": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN032": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN033": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN034": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN035": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN036": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN037": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN038": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN039": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN040": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN041": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN042": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN043": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN044": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN045": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN046": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN047": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN048": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN049": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN050": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN051": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN052": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN053": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN054": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN055": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN056": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN057": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN058": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN059": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN060": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN061": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN062": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN063": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN064": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN065": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN066": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN067": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN068": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN069": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN070": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN071": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN072": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN073": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN074": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN075": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN076": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN077": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN078": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN079": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN080": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN081": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN082": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN083": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN084": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN085": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN086": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN087": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN088": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN089": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN090": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN091": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN092": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN093": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN094": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN095": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN096": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN097": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN098": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN099": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN100": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN101": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN102": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN103": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN104": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN105": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN106": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN107": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN108": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN109": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN110": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN111": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN112": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN113": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN114": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN115": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN116": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN117": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN118": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN119": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN120": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN121": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN122": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN123": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN124": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN125": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN126": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN127": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN128": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN129": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN130": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN131": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN132": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN133": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN134": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN135": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN136": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN137": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN138": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN139": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN140": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN141": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN142": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN143": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN144": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN145": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN146": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN147": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN148": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN149": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN150": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN151": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN152": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN153": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN154": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN155": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN156": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN157": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN158": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN159": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN160": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN161": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN162": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN163": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN164": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN165": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN166": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN167": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN168": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN169": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN170": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN171": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN172": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN173": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN174": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN175": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN176": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN177": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN178": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN179": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN180": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN181": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN182": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN183": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN184": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN185": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN186": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN187": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN188": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN189": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN190": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN191": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN192": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN193": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN194": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN195": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN196": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN197": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN198": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN199": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN200": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN201": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN202": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN203": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN204": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN205": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN206": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN207": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN208": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN209": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN210": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN211": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN212": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN213": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN214": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN215": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN216": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN217": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN218": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN219": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN220": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN221": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN222": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN223": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN224": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN225": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN226": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN227": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN228": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN229": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN230": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN231": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN232": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN233": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN234": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN235": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN236": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN237": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN238": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN239": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN240": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN241": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN242": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN243": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN244": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN245": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN246": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN247": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN248": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN249": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN250": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN251": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN252": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN253": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN254": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN255": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN256": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN257": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN258": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN259": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN260": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN261": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN262": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN263": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN264": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN265": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN266": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN267": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN268": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN269": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN270": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN271": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN272": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN273": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN274": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN275": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN276": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN277": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN278": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN279": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN280": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN281": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN282": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN283": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN284": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN285": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN286": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN287": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN288": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN289": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN290": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN291": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN292": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN293": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN294": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN295": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN296": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN297": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN298": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN299": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN300": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    }
+  },
+  "cost_usd": 13.623452999999994,
+  "elapsed_seconds": 1388.04669713974,
+  "metadata": {
+    "with_context": false,
+    "context_k": 10
+  }
+}

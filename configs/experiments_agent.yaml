@@ -1,0 +1,55 @@
+# BioPAT Experiment 7 — Agent-based Dual Retrieval
+# Evaluates LLM agents on finding both relevant papers AND patents
+
+# LLM models under evaluation
+models:
+  gpt4o:
+    provider: openai
+    model_id: gpt-4o
+    display_name: "GPT-4o"
+  sonnet45:
+    provider: anthropic
+    model_id: claude-sonnet-4-5-20250929
+    display_name: "Claude Sonnet 4.5"
+  gemini25pro:
+    provider: google
+    model_id: gemini-2.5-pro
+    display_name: "Gemini 2.5 Pro"
+
+experiments:
+  # Only agent retrieval enabled in this config
+  bm25_baseline:
+    enabled: false
+  dense_baseline:
+    enabled: false
+  hyde:
+    enabled: false
+  reranking:
+    enabled: false
+  relevance_judgment:
+    enabled: false
+  novelty_assessment:
+    enabled: false
+
+  # Exp 7: Agent-based dual retrieval
+  agent_retrieval:
+    enabled: true
+    description: "LLM agent iteratively searches dual corpus (papers + patents)"
+    llm_models: [gpt4o, sonnet45, gemini25pro]
+    query_types: ["A"]          # Type A = patent→papers (MVP), add "B" for Phase 2
+    max_queries: 200            # Subsample from test split
+    k_values: [10, 50, 100]
+    agent_params:
+      max_search_calls: 5      # Max BM25 searches per query
+      search_top_k: 20         # Results per search call
+      final_list_size: 100     # Final ranked list size
+
+# Budget and controls
+budget:
+  max_total_usd: 500.0
+  warn_at_usd: 100.0           # Lower threshold for agent-only runs
+
+# Output settings
+output:
+  results_dir: data/results
+  checkpoint_dir: data/results/checkpoints

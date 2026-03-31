@@ -1,0 +1,44 @@
+# BioPAT Benchmark — Default Configuration
+# Used for benchmark corpus construction (Phase 1 pipeline)
+
+phase: phase1
+
+paths:
+  data_dir: data
+  raw_dir: data/raw
+  processed_dir: data/processed
+  cache_dir: data/cache
+  benchmark_dir: data/benchmark
+  checkpoint_dir: data/checkpoints
+
+api:
+  # API keys loaded from environment variables by default
+  # patentsview_api_keys: set via PATENTSVIEW_API_KEYS env var
+  # openalex_email: set via OPENALEX_MAILTO env var
+  use_bulk_data: true
+
+phase1:
+  target_patent_count: 2000
+  target_query_count: 5000
+  min_citations: 3
+  ros_confidence_threshold: 8
+  ipc_prefixes: ["A61", "C07", "C12"]
+  seed: 42
+  graded_relevance: true
+
+llm:
+  # API keys loaded from environment variables
+  openai_model: gpt-4o
+  anthropic_model: claude-sonnet-4-5-20250929
+  google_model: gemini-2.5-pro
+  max_concurrent: 5
+  cost_budget_usd: 500.0
+
+evaluation:
+  cpu_only: true
+  dense_batch_size: 16
+  bm25_top_k: 100
+  dense_top_k: 100
+  rerank_top_k: 20
+  splits: ["test"]
+  results_dir: data/results

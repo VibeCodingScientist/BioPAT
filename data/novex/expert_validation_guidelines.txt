@@ -1,0 +1,122 @@
+================================================================================
+NovEx EXPERT VALIDATION — ANNOTATION GUIDELINES
+================================================================================
+
+TASK OVERVIEW
+-------------
+You will review 100 patent-derived technical statements and assess whether
+each statement describes something NOVEL, PARTIALLY ANTICIPATED, or fully
+ANTICIPATED by the provided prior art documents.
+
+This validation is for a benchmark paper evaluating how well AI systems can
+assess patent novelty. Your expert judgments will serve as ground truth
+validation.
+
+Estimated time: 5-6 hours (100 statements × ~3 min each)
+
+
+LABEL DEFINITIONS
+-----------------
+
+NOVEL (score 0):
+  The prior art documents do NOT anticipate this statement. The specific
+  combination of elements, the particular application, or the core technical
+  contribution described is not found in or obvious from the listed prior art.
+
+  Example: A statement describes using compound X to treat disease Y via
+  mechanism Z, and the prior art documents discuss compound X for other
+  diseases but never mention disease Y or mechanism Z.
+
+PARTIALLY_ANTICIPATED (score 1):
+  Some elements of the statement appear in the prior art, but the complete
+  combination or specific application is not fully disclosed. Key aspects
+  are anticipated, but the statement contains meaningful novel contributions
+  beyond the prior art.
+
+  Example: A statement describes a method with steps A+B+C where the prior
+  art documents describe A+B in detail but step C or the specific combination
+  A+B+C is not taught.
+
+ANTICIPATED (score 2):
+  The prior art documents substantially anticipate this statement. The core
+  technical contribution is already disclosed or would be obvious to a person
+  skilled in the art based on the provided documents.
+
+  Example: A statement describes using dsRNA of 15-21 nucleotides to inhibit
+  gene expression, and multiple prior art documents describe exactly this
+  technique.
+
+
+WHAT YOU SEE PER STATEMENT
+--------------------------
+For each statement, you will see:
+  - Statement_ID: Unique identifier (e.g., RN001)
+  - Domain: IPC domain code (A61=medical, C07=organic chemistry, C12=biotech)
+  - Statement_Text: The technical claim to evaluate
+  - Source_Patent: The patent this statement was derived from (for context only)
+  - PriorArt_1 through PriorArt_5: Top prior art documents, each with:
+    - ID: Document identifier (W-prefix = paper, numeric = patent)
+    - Title: Document title
+    - Snippet: First ~250 characters of the document text
+    - RelevanceGrade: How relevant this doc is (3=highly, 2=moderate, 1=marginal)
+
+WHAT TO FILL IN
+---------------
+  - Expert_Label: NOVEL, PARTIALLY_ANTICIPATED, or ANTICIPATED
+  - Expert_Confidence: High, Medium, or Low
+  - Expert_Rationale: One sentence explaining your judgment (optional but helpful)
+
+
+IMPORTANT NOTES
+---------------
+  1. Judge based ONLY on the provided prior art documents, not your general
+     domain knowledge. The question is: "Do THESE documents anticipate THIS
+     statement?"
+
+  2. The snippets are abbreviated. If a document title alone strongly suggests
+     anticipation, that's sufficient — you don't need the full text.
+
+  3. Documents with RelevanceGrade=3 are highly relevant; Grade=1 is marginal.
+     Focus your attention on Grade 2-3 documents.
+
+  4. W-prefix IDs are academic papers; purely numeric IDs are patents.
+
+  5. "Source_Patent" is the patent the statement was extracted from. It is NOT
+     part of the prior art — ignore it for your novelty judgment.
+
+  6. When in doubt between NOVEL and PARTIALLY_ANTICIPATED, lean toward
+     PARTIALLY_ANTICIPATED. When in doubt between PARTIALLY_ANTICIPATED and
+     ANTICIPATED, consider whether a skilled practitioner would find the
+     statement's contribution obvious from the prior art.
+
+
+WORKED EXAMPLES
+---------------
+
+Example A — ANTICIPATED:
+  Statement: "Double-stranded RNA molecules between 15 and 21 nucleotides in
+  length complementary to a target gene sequence are used to inhibit expression
+  of that target gene."
+  Prior art includes multiple patents and papers describing exactly this RNAi
+  mechanism with these size parameters.
+  → ANTICIPATED (High confidence): Core technique fully described in prior art.
+
+Example B — NOVEL:
+  Statement: "A method for distinguishing agonistic anti-PD-L1 antibodies from
+  antagonistic anti-PD-L1 antibodies using a functional assay that differentiates
+  antibodies activating B7-H1 signaling from those blocking PD-1 interactions."
+  Prior art discusses PD-L1 antibodies broadly but none describe a method to
+  functionally distinguish agonistic vs antagonistic variants.
+  → NOVEL (Medium confidence): Specific functional distinction method not taught.
+
+Example C — PARTIALLY_ANTICIPATED:
+  Statement: "Modified mRNA encoding AIF1 with chemical modifications for
+  therapeutic oncology applications."
+  Prior art describes modified mRNA technology in general and for other targets,
+  but AIF1 targeting for oncology is not specifically taught.
+  → PARTIALLY_ANTICIPATED (High confidence): Platform known, specific target new.
+
+================================================================================
+Thank you for your expert review. Your judgments are critical for validating
+the quality of our benchmark's ground truth labels.
+================================================================================

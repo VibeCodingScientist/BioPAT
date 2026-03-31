@@ -1,0 +1,230 @@
+{
+  "tier1": [
+    {
+      "method": "bm25",
+      "model": "N/A",
+      "recall@10": 0.4813,
+      "ndcg@10": 0.6752,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "bm25_rerank",
+      "model": "gpt-5.2",
+      "recall@10": 0.5644,
+      "ndcg@10": 0.775,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "agent",
+      "model": "gpt-5.2",
+      "recall@10": 0.1864,
+      "ndcg@10": 0.3133,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "bm25_rerank",
+      "model": "claude-sonnet-4-6",
+      "recall@10": 0.5626,
+      "ndcg@10": 0.7718,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "agent",
+      "model": "claude-sonnet-4-6",
+      "recall@10": 0.2888,
+      "ndcg@10": 0.4639,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "bm25_rerank",
+      "model": "gemini-3-pro-preview",
+      "recall@10": 0.4813,
+      "ndcg@10": 0.6752,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    },
+    {
+      "method": "agent",
+      "model": "gemini-3-pro-preview",
+      "recall@10": 0.3962,
+      "ndcg@10": 0.5955,
+      "cost_usd": 0.0,
+      "incremental_cost": 0.0
+    }
+  ],
+  "tier2": [
+    {
+      "model": "gpt-5.2",
+      "accuracy": 0.767,
+      "weighted_kappa": 0.8528,
+      "cost_usd": 11.15
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "accuracy": 0.7911,
+      "weighted_kappa": 0.8732,
+      "cost_usd": 43.63
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "accuracy": 0.7247,
+      "weighted_kappa": 0.827,
+      "cost_usd": 4.15
+    }
+  ],
+  "tier3": [
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.7533,
+      "macro_f1": 0.6614,
+      "cost_usd": 44.96
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "zs",
+      "accuracy": 0.1933,
+      "macro_f1": 0.1947,
+      "cost_usd": 45.51
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.7726,
+      "macro_f1": 0.65,
+      "cost_usd": 51.31
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "zs",
+      "accuracy": 0.5152,
+      "macro_f1": 0.4256,
+      "cost_usd": 58.25
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.7527,
+      "macro_f1": 0.5503,
+      "cost_usd": 5.13
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "zs",
+      "accuracy": 0.0635,
+      "macro_f1": 0.0411,
+      "cost_usd": 5.29
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.5633,
+      "macro_f1": 0.554,
+      "cost_usd": 0.83
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.7033,
+      "macro_f1": 0.6394,
+      "cost_usd": 1.8
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.7467,
+      "macro_f1": 0.6819,
+      "cost_usd": 2.86
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.7567,
+      "macro_f1": 0.6505,
+      "cost_usd": 4.15
+    },
+    {
+      "model": "gpt-5.2",
+      "context": "ctx",
+      "accuracy": 0.7533,
+      "macro_f1": 0.6559,
+      "cost_usd": 5.7
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.7057,
+      "macro_f1": 0.6549,
+      "cost_usd": 9.07
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.7458,
+      "macro_f1": 0.6187,
+      "cost_usd": 13.21
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.7592,
+      "macro_f1": 0.6805,
+      "cost_usd": 18.03
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.8416,
+      "macro_f1": 0.7508,
+      "cost_usd": 20.0
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "context": "ctx",
+      "accuracy": 0.7559,
+      "macro_f1": 0.5864,
+      "cost_usd": 6.55
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.6934,
+      "macro_f1": 0.5274,
+      "cost_usd": 6.91
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.7474,
+      "macro_f1": 0.5834,
+      "cost_usd": 7.37
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.7394,
+      "macro_f1": 0.5384,
+      "cost_usd": 7.99
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.7282,
+      "macro_f1": 0.5323,
+      "cost_usd": 8.96
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "context": "ctx",
+      "accuracy": 0.7448,
+      "macro_f1": 0.5369,
+      "cost_usd": 1.4
+    }
+  ],
+  "total_cost_usd": 384.19
+}

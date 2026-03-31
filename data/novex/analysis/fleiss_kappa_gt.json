@@ -1,0 +1,43 @@
+{
+  "n_subjects": 264,
+  "n_raters": 3,
+  "categories": [
+    "NOVEL",
+    "PARTIALLY_ANTICIPATED",
+    "ANTICIPATED"
+  ],
+  "category_proportions": {
+    "NOVEL": 0.0328,
+    "PARTIALLY_ANTICIPATED": 0.2323,
+    "ANTICIPATED": 0.7348
+  },
+  "fleiss_kappa": 0.3421,
+  "P_bar": 0.7336,
+  "P_e": 0.5951,
+  "per_category_kappa": {
+    "NOVEL": 0.324,
+    "PARTIALLY_ANTICIPATED": 0.285,
+    "ANTICIPATED": 0.3973
+  },
+  "pairwise_cohens_kappa": {
+    "openai_vs_anthropic": {
+      "n_common": 287,
+      "observed_agreement": 0.7944,
+      "expected_agreement": 0.5177,
+      "cohens_kappa": 0.5737
+    },
+    "openai_vs_google": {
+      "n_common": 264,
+      "observed_agreement": 0.6667,
+      "expected_agreement": 0.5819,
+      "cohens_kappa": 0.2027
+    },
+    "anthropic_vs_google": {
+      "n_common": 264,
+      "observed_agreement": 0.7348,
+      "expected_agreement": 0.6271,
+      "cohens_kappa": 0.2889
+    }
+  },
+  "interpretation": "fair agreement"
+}

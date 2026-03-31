@@ -1,0 +1,67 @@
+{
+  "num_statements": 300,
+  "num_unique_corpus_docs": 3854,
+  "domain_distribution": {
+    "A61": 121,
+    "C12": 91,
+    "C07": 88
+  },
+  "category_distribution": {
+    "both": 153,
+    "patents_only": 95,
+    "papers_only": 33,
+    "novel": 19
+  },
+  "source_type_distribution": {
+    "patent": 300
+  },
+  "novelty_label_distribution": {
+    "NOVEL": 18,
+    "PARTIALLY_ANTICIPATED": 72,
+    "ANTICIPATED": 210
+  },
+  "novelty_label_proportions": {
+    "ANTICIPATED": 0.7,
+    "NOVEL": 0.06,
+    "PARTIALLY_ANTICIPATED": 0.24
+  },
+  "tier3_agreement": {
+    "unanimous": 178,
+    "majority": 98,
+    "override": 13,
+    "no_consensus": 11
+  },
+  "statement_length_chars": {
+    "min": 166,
+    "p25": 296,
+    "median": 341,
+    "p75": 387,
+    "max": 686,
+    "mean": 346.6,
+    "std": 72.5
+  },
+  "statement_length_words": {
+    "min": 18,
+    "p25": 39,
+    "median": 46,
+    "p75": 51,
+    "max": 101,
+    "mean": 45.8,
+    "std": 10.5
+  },
+  "relevant_docs_per_query": {
+    "min": 1,
+    "p25": 10,
+    "median": 17,
+    "p75": 20,
+    "max": 50,
+    "mean": 18.0,
+    "std": 11.2
+  },
+  "tier1_grade_distribution": {
+    "1": 2321,
+    "2": 1341,
+    "3": 1690
+  },
+  "total_relevance_judgments": 5352
+}

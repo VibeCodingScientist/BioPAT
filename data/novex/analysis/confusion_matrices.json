@@ -1,0 +1,224 @@
+{
+  "gpt_5.2_ctx": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 11,
+        "PARTIALLY_ANTICIPATED": 7,
+        "ANTICIPATED": 0
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 5,
+        "PARTIALLY_ANTICIPATED": 39,
+        "ANTICIPATED": 28
+      },
+      "ANTICIPATED": {
+        "NOVEL": 5,
+        "PARTIALLY_ANTICIPATED": 28,
+        "ANTICIPATED": 177
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.5238,
+        "recall": 0.6111,
+        "f1": 0.5641
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0.527,
+        "recall": 0.5417,
+        "f1": 0.5342
+      },
+      "ANTICIPATED": {
+        "precision": 0.8634,
+        "recall": 0.8429,
+        "f1": 0.853
+      }
+    },
+    "n_queries": 300
+  },
+  "gpt_5.2_zs": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 15,
+        "PARTIALLY_ANTICIPATED": 1,
+        "ANTICIPATED": 2
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 63,
+        "PARTIALLY_ANTICIPATED": 6,
+        "ANTICIPATED": 3
+      },
+      "ANTICIPATED": {
+        "NOVEL": 167,
+        "PARTIALLY_ANTICIPATED": 6,
+        "ANTICIPATED": 37
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.0612,
+        "recall": 0.8333,
+        "f1": 0.1141
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0.4615,
+        "recall": 0.0833,
+        "f1": 0.1412
+      },
+      "ANTICIPATED": {
+        "precision": 0.881,
+        "recall": 0.1762,
+        "f1": 0.2937
+      }
+    },
+    "n_queries": 300
+  },
+  "claude_sonnet_4_6_ctx": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 8,
+        "PARTIALLY_ANTICIPATED": 10,
+        "ANTICIPATED": 0
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 4,
+        "PARTIALLY_ANTICIPATED": 36,
+        "ANTICIPATED": 31
+      },
+      "ANTICIPATED": {
+        "NOVEL": 4,
+        "PARTIALLY_ANTICIPATED": 24,
+        "ANTICIPATED": 182
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.5,
+        "recall": 0.4444,
+        "f1": 0.4706
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0.5143,
+        "recall": 0.507,
+        "f1": 0.5106
+      },
+      "ANTICIPATED": {
+        "precision": 0.8545,
+        "recall": 0.8667,
+        "f1": 0.8605
+      }
+    },
+    "n_queries": 299
+  },
+  "claude_sonnet_4_6_zs": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 7,
+        "PARTIALLY_ANTICIPATED": 9,
+        "ANTICIPATED": 2
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 28,
+        "PARTIALLY_ANTICIPATED": 36,
+        "ANTICIPATED": 8
+      },
+      "ANTICIPATED": {
+        "NOVEL": 47,
+        "PARTIALLY_ANTICIPATED": 49,
+        "ANTICIPATED": 111
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.0854,
+        "recall": 0.3889,
+        "f1": 0.14
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0.383,
+        "recall": 0.5,
+        "f1": 0.4337
+      },
+      "ANTICIPATED": {
+        "precision": 0.9174,
+        "recall": 0.5362,
+        "f1": 0.6768
+      }
+    },
+    "n_queries": 297
+  },
+  "gemini_3_pro_preview_ctx": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 17,
+        "PARTIALLY_ANTICIPATED": 1,
+        "ANTICIPATED": 0
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 22,
+        "PARTIALLY_ANTICIPATED": 9,
+        "ANTICIPATED": 38
+      },
+      "ANTICIPATED": {
+        "NOVEL": 8,
+        "PARTIALLY_ANTICIPATED": 9,
+        "ANTICIPATED": 183
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.3617,
+        "recall": 0.9444,
+        "f1": 0.5231
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0.4737,
+        "recall": 0.1304,
+        "f1": 0.2045
+      },
+      "ANTICIPATED": {
+        "precision": 0.8281,
+        "recall": 0.915,
+        "f1": 0.8694
+      }
+    },
+    "n_queries": 287
+  },
+  "gemini_3_pro_preview_zs": {
+    "matrix": {
+      "NOVEL": {
+        "NOVEL": 18,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 0
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 72,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 0
+      },
+      "ANTICIPATED": {
+        "NOVEL": 210,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 0
+      }
+    },
+    "class_stats": {
+      "NOVEL": {
+        "precision": 0.06,
+        "recall": 1.0,
+        "f1": 0.1132
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0
+      },
+      "ANTICIPATED": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0
+      }
+    },
+    "n_queries": 300
+  }
+}

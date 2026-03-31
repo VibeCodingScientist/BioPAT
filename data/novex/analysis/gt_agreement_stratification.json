@@ -1,0 +1,260 @@
+{
+  "GPT-5.2": {
+    "majority": {
+      "n_queries": 98,
+      "accuracy": 0.5204,
+      "by_label": {
+        "NOVEL": {
+          "n": 3,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 50,
+          "correct": 23,
+          "accuracy": 0.46
+        },
+        "ANTICIPATED": {
+          "n": 45,
+          "correct": 28,
+          "accuracy": 0.6222
+        }
+      }
+    },
+    "no_consensus": {
+      "n_queries": 11,
+      "accuracy": 0.4545,
+      "by_label": {
+        "NOVEL": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 11,
+          "correct": 5,
+          "accuracy": 0.4545
+        }
+      }
+    },
+    "override": {
+      "n_queries": 13,
+      "accuracy": 0.6923,
+      "by_label": {
+        "NOVEL": {
+          "n": 13,
+          "correct": 9,
+          "accuracy": 0.6923
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        }
+      }
+    },
+    "unanimous": {
+      "n_queries": 178,
+      "accuracy": 0.9101,
+      "by_label": {
+        "NOVEL": {
+          "n": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 22,
+          "correct": 16,
+          "accuracy": 0.7273
+        },
+        "ANTICIPATED": {
+          "n": 154,
+          "correct": 144,
+          "accuracy": 0.9351
+        }
+      }
+    }
+  },
+  "Claude Sonnet 4.6": {
+    "majority": {
+      "n_queries": 97,
+      "accuracy": 0.5876,
+      "by_label": {
+        "NOVEL": {
+          "n": 3,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 49,
+          "correct": 23,
+          "accuracy": 0.4694
+        },
+        "ANTICIPATED": {
+          "n": 45,
+          "correct": 34,
+          "accuracy": 0.7556
+        }
+      }
+    },
+    "no_consensus": {
+      "n_queries": 11,
+      "accuracy": 0.1818,
+      "by_label": {
+        "NOVEL": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 11,
+          "correct": 2,
+          "accuracy": 0.1818
+        }
+      }
+    },
+    "override": {
+      "n_queries": 13,
+      "accuracy": 0.3846,
+      "by_label": {
+        "NOVEL": {
+          "n": 13,
+          "correct": 5,
+          "accuracy": 0.3846
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        }
+      }
+    },
+    "unanimous": {
+      "n_queries": 178,
+      "accuracy": 0.9101,
+      "by_label": {
+        "NOVEL": {
+          "n": 2,
+          "correct": 1,
+          "accuracy": 0.5
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 22,
+          "correct": 14,
+          "accuracy": 0.6364
+        },
+        "ANTICIPATED": {
+          "n": 154,
+          "correct": 147,
+          "accuracy": 0.9545
+        }
+      }
+    }
+  },
+  "Gemini 3 Pro": {
+    "majority": {
+      "n_queries": 92,
+      "accuracy": 0.4239,
+      "by_label": {
+        "NOVEL": {
+          "n": 3,
+          "correct": 2,
+          "accuracy": 0.6667
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 48,
+          "correct": 4,
+          "accuracy": 0.0833
+        },
+        "ANTICIPATED": {
+          "n": 41,
+          "correct": 33,
+          "accuracy": 0.8049
+        }
+      }
+    },
+    "no_consensus": {
+      "n_queries": 10,
+      "accuracy": 0.6,
+      "by_label": {
+        "NOVEL": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 10,
+          "correct": 6,
+          "accuracy": 0.6
+        }
+      }
+    },
+    "override": {
+      "n_queries": 13,
+      "accuracy": 1.0,
+      "by_label": {
+        "NOVEL": {
+          "n": 13,
+          "correct": 13,
+          "accuracy": 1.0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "ANTICIPATED": {
+          "n": 0,
+          "correct": 0,
+          "accuracy": 0
+        }
+      }
+    },
+    "unanimous": {
+      "n_queries": 172,
+      "accuracy": 0.8779,
+      "by_label": {
+        "NOVEL": {
+          "n": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "n": 21,
+          "correct": 5,
+          "accuracy": 0.2381
+        },
+        "ANTICIPATED": {
+          "n": 149,
+          "correct": 144,
+          "accuracy": 0.9664
+        }
+      }
+    }
+  }
+}

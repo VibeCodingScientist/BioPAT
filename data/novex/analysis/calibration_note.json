@@ -1,0 +1,79 @@
+{
+  "checkpoint_keys_available": [
+    "correct",
+    "predicted"
+  ],
+  "confidence_scores_available": false,
+  "note": "T3 checkpoints store 'correct' (0/1) and 'predicted' (label string) but not confidence/probability scores. Full calibration analysis (ECE, reliability diagrams) requires re-running T3 with logprob extraction. As a proxy, we report prediction distribution alignment with ground truth distribution.",
+  "proxy_calibration": {
+    "GPT-5.2": {
+      "prediction_distribution": {
+        "NOVEL": 21,
+        "PARTIALLY_ANTICIPATED": 74,
+        "ANTICIPATED": 205
+      },
+      "ground_truth_distribution": {
+        "NOVEL": 18,
+        "PARTIALLY_ANTICIPATED": 72,
+        "ANTICIPATED": 210
+      },
+      "prediction_proportions": {
+        "NOVEL": 0.07,
+        "PARTIALLY_ANTICIPATED": 0.2467,
+        "ANTICIPATED": 0.6833
+      },
+      "gt_proportions": {
+        "NOVEL": 0.06,
+        "PARTIALLY_ANTICIPATED": 0.24,
+        "ANTICIPATED": 0.7
+      },
+      "kl_divergence_pred_vs_gt": 0.0011
+    },
+    "Claude Sonnet 4.6": {
+      "prediction_distribution": {
+        "NOVEL": 16,
+        "PARTIALLY_ANTICIPATED": 70,
+        "ANTICIPATED": 213
+      },
+      "ground_truth_distribution": {
+        "NOVEL": 18,
+        "PARTIALLY_ANTICIPATED": 71,
+        "ANTICIPATED": 210
+      },
+      "prediction_proportions": {
+        "NOVEL": 0.0535,
+        "PARTIALLY_ANTICIPATED": 0.2341,
+        "ANTICIPATED": 0.7124
+      },
+      "gt_proportions": {
+        "NOVEL": 0.0602,
+        "PARTIALLY_ANTICIPATED": 0.2375,
+        "ANTICIPATED": 0.7023
+      },
+      "kl_divergence_pred_vs_gt": 0.0005
+    },
+    "Gemini 3 Pro": {
+      "prediction_distribution": {
+        "NOVEL": 47,
+        "PARTIALLY_ANTICIPATED": 19,
+        "ANTICIPATED": 221
+      },
+      "ground_truth_distribution": {
+        "NOVEL": 18,
+        "PARTIALLY_ANTICIPATED": 69,
+        "ANTICIPATED": 200
+      },
+      "prediction_proportions": {
+        "NOVEL": 0.1638,
+        "PARTIALLY_ANTICIPATED": 0.0662,
+        "ANTICIPATED": 0.77
+      },
+      "gt_proportions": {
+        "NOVEL": 0.0627,
+        "PARTIALLY_ANTICIPATED": 0.2404,
+        "ANTICIPATED": 0.6969
+      },
+      "kl_divergence_pred_vs_gt": 0.1487
+    }
+  }
+}

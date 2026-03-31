@@ -1,0 +1,35 @@
+[
+  {
+    "model": "gpt-5.2",
+    "accuracy": 0.767,
+    "mae": 0.2358,
+    "weighted_kappa": 0.8528,
+    "num_pairs": 5352.0,
+    "accuracy_ci_lower": 0.7409,
+    "accuracy_ci_upper": 0.7855,
+    "mae_ci_lower": 0.217,
+    "mae_ci_upper": 0.2623
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.7911,
+    "mae": 0.2094,
+    "weighted_kappa": 0.8732,
+    "num_pairs": 5314.0,
+    "accuracy_ci_lower": 0.7697,
+    "accuracy_ci_upper": 0.8077,
+    "mae_ci_lower": 0.1928,
+    "mae_ci_upper": 0.2309
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "accuracy": 0.7247,
+    "mae": 0.2853,
+    "weighted_kappa": 0.827,
+    "num_pairs": 5321.0,
+    "accuracy_ci_lower": 0.6915,
+    "accuracy_ci_upper": 0.739,
+    "mae_ci_lower": 0.2684,
+    "mae_ci_upper": 0.3179
+  }
+]

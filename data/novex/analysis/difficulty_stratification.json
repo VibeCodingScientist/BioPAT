@@ -1,0 +1,338 @@
+{
+  "bucket_thresholds": {
+    "hard": "<0.3",
+    "medium": "0.3-0.7",
+    "easy": ">0.7"
+  },
+  "bucket_counts": {
+    "medium": 199,
+    "easy": 36,
+    "hard": 63
+  },
+  "tier1": {
+    "bm25/N/A": {
+      "easy": {
+        "mean": 0.8643,
+        "ci_lower": 0.8292,
+        "ci_upper": 0.8995,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.2155,
+        "ci_lower": 0.1997,
+        "ci_upper": 0.2302,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.4961,
+        "ci_lower": 0.4824,
+        "ci_upper": 0.5099,
+        "count": 199
+      }
+    },
+    "bm25_rerank/gpt-5.2": {
+      "easy": {
+        "mean": 0.9115,
+        "ci_lower": 0.8817,
+        "ci_upper": 0.9405,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.2892,
+        "ci_lower": 0.2583,
+        "ci_upper": 0.3271,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.5888,
+        "ci_lower": 0.5659,
+        "ci_upper": 0.6129,
+        "count": 199
+      }
+    },
+    "agent/gpt-5.2": {
+      "easy": {
+        "mean": 0.2882,
+        "ci_lower": 0.1997,
+        "ci_upper": 0.3839,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.1034,
+        "ci_lower": 0.0801,
+        "ci_upper": 0.1275,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.1942,
+        "ci_lower": 0.1721,
+        "ci_upper": 0.2167,
+        "count": 199
+      }
+    },
+    "bm25_rerank/claude-sonnet-4-6": {
+      "easy": {
+        "mean": 0.9173,
+        "ci_lower": 0.8874,
+        "ci_upper": 0.9462,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.2857,
+        "ci_lower": 0.255,
+        "ci_upper": 0.3229,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.5862,
+        "ci_lower": 0.5635,
+        "ci_upper": 0.6097,
+        "count": 199
+      }
+    },
+    "agent/claude-sonnet-4-6": {
+      "easy": {
+        "mean": 0.4909,
+        "ci_lower": 0.3942,
+        "ci_upper": 0.5881,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.1418,
+        "ci_lower": 0.1239,
+        "ci_upper": 0.1597,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.2988,
+        "ci_lower": 0.2747,
+        "ci_upper": 0.3235,
+        "count": 199
+      }
+    },
+    "bm25_rerank/gemini-3-pro-preview": {
+      "easy": {
+        "mean": 0.8643,
+        "ci_lower": 0.8292,
+        "ci_upper": 0.8995,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.2155,
+        "ci_lower": 0.1997,
+        "ci_upper": 0.2302,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.4961,
+        "ci_lower": 0.4824,
+        "ci_upper": 0.5099,
+        "count": 199
+      }
+    },
+    "agent/gemini-3-pro-preview": {
+      "easy": {
+        "mean": 0.6738,
+        "ci_lower": 0.5668,
+        "ci_upper": 0.7738,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.2288,
+        "ci_lower": 0.2012,
+        "ci_upper": 0.2638,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.3989,
+        "ci_lower": 0.3763,
+        "ci_upper": 0.4209,
+        "count": 199
+      }
+    }
+  },
+  "tier2": {
+    "gpt-5.2": {
+      "easy": {
+        "mean": 0.7329,
+        "ci_lower": 0.6286,
+        "ci_upper": 0.8272,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.7497,
+        "ci_lower": 0.7013,
+        "ci_upper": 0.7943,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.7733,
+        "ci_lower": 0.749,
+        "ci_upper": 0.7974,
+        "count": 199
+      }
+    },
+    "claude-sonnet-4-6": {
+      "easy": {
+        "mean": 0.7987,
+        "ci_lower": 0.7176,
+        "ci_upper": 0.8688,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.7529,
+        "ci_lower": 0.7085,
+        "ci_upper": 0.7929,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.7986,
+        "ci_lower": 0.7779,
+        "ci_upper": 0.8194,
+        "count": 199
+      }
+    },
+    "gemini-3-pro-preview": {
+      "easy": {
+        "mean": 0.7598,
+        "ci_lower": 0.6636,
+        "ci_upper": 0.8449,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.6909,
+        "ci_lower": 0.6435,
+        "ci_upper": 0.7348,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.7148,
+        "ci_lower": 0.6863,
+        "ci_upper": 0.7434,
+        "count": 199
+      }
+    }
+  },
+  "tier3": {
+    "gpt-5.2_ctx": {
+      "easy": {
+        "mean": 0.8333,
+        "ci_lower": 0.6944,
+        "ci_upper": 0.9444,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.7143,
+        "ci_lower": 0.6032,
+        "ci_upper": 0.8254,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.7487,
+        "ci_lower": 0.6884,
+        "ci_upper": 0.809,
+        "count": 199
+      }
+    },
+    "gpt-5.2_zs": {
+      "easy": {
+        "mean": 0.2222,
+        "ci_lower": 0.0833,
+        "ci_upper": 0.3611,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.1587,
+        "ci_lower": 0.0794,
+        "ci_upper": 0.254,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.191,
+        "ci_lower": 0.1357,
+        "ci_upper": 0.2462,
+        "count": 199
+      }
+    },
+    "claude-sonnet-4-6_ctx": {
+      "easy": {
+        "mean": 0.8333,
+        "ci_lower": 0.6944,
+        "ci_upper": 0.9444,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.8065,
+        "ci_lower": 0.7097,
+        "ci_upper": 0.9032,
+        "count": 62
+      },
+      "medium": {
+        "mean": 0.7538,
+        "ci_lower": 0.6935,
+        "ci_upper": 0.8141,
+        "count": 199
+      }
+    },
+    "claude-sonnet-4-6_zs": {
+      "easy": {
+        "mean": 0.5556,
+        "ci_lower": 0.3889,
+        "ci_upper": 0.7222,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.4839,
+        "ci_lower": 0.3548,
+        "ci_upper": 0.6129,
+        "count": 62
+      },
+      "medium": {
+        "mean": 0.5178,
+        "ci_lower": 0.4467,
+        "ci_upper": 0.5888,
+        "count": 197
+      }
+    },
+    "gemini-3-pro-preview_ctx": {
+      "easy": {
+        "mean": 0.8125,
+        "ci_lower": 0.6562,
+        "ci_upper": 0.9375,
+        "count": 32
+      },
+      "hard": {
+        "mean": 0.7833,
+        "ci_lower": 0.6833,
+        "ci_upper": 0.8833,
+        "count": 60
+      },
+      "medium": {
+        "mean": 0.7302,
+        "ci_lower": 0.6667,
+        "ci_upper": 0.7937,
+        "count": 189
+      }
+    },
+    "gemini-3-pro-preview_zs": {
+      "easy": {
+        "mean": 0.0833,
+        "ci_lower": 0.0,
+        "ci_upper": 0.1944,
+        "count": 36
+      },
+      "hard": {
+        "mean": 0.0476,
+        "ci_lower": 0.0,
+        "ci_upper": 0.1111,
+        "count": 63
+      },
+      "medium": {
+        "mean": 0.0556,
+        "ci_lower": 0.0253,
+        "ci_upper": 0.0909,
+        "count": 198
+      }
+    }
+  }
+}

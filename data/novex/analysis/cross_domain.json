@@ -1,0 +1,184 @@
+{
+  "bm25/N/A": {
+    "both": {
+      "mean": 0.4577,
+      "ci_lower": 0.4291,
+      "ci_upper": 0.4864,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.4564,
+      "ci_lower": 0.3137,
+      "ci_upper": 0.6056,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.5234,
+      "ci_lower": 0.4537,
+      "ci_upper": 0.5982,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.5091,
+      "ci_lower": 0.4689,
+      "ci_upper": 0.5516,
+      "count": 95
+    }
+  },
+  "bm25_rerank/gpt-5.2": {
+    "both": {
+      "mean": 0.5247,
+      "ci_lower": 0.4912,
+      "ci_upper": 0.5593,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.672,
+      "ci_lower": 0.5369,
+      "ci_upper": 0.7993,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.7241,
+      "ci_lower": 0.6444,
+      "ci_upper": 0.802,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.5537,
+      "ci_lower": 0.5093,
+      "ci_upper": 0.6007,
+      "count": 95
+    }
+  },
+  "agent/gpt-5.2": {
+    "both": {
+      "mean": 0.1625,
+      "ci_lower": 0.1401,
+      "ci_upper": 0.1863,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.0632,
+      "ci_lower": 0.0172,
+      "ci_upper": 0.1186,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.2304,
+      "ci_lower": 0.158,
+      "ci_upper": 0.3097,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.2316,
+      "ci_lower": 0.1924,
+      "ci_upper": 0.2719,
+      "count": 95
+    }
+  },
+  "bm25_rerank/claude-sonnet-4-6": {
+    "both": {
+      "mean": 0.5223,
+      "ci_lower": 0.4897,
+      "ci_upper": 0.5556,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.6774,
+      "ci_lower": 0.5333,
+      "ci_upper": 0.8114,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.7259,
+      "ci_lower": 0.6429,
+      "ci_upper": 0.8077,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.5504,
+      "ci_lower": 0.5058,
+      "ci_upper": 0.5973,
+      "count": 95
+    }
+  },
+  "agent/claude-sonnet-4-6": {
+    "both": {
+      "mean": 0.2776,
+      "ci_lower": 0.2511,
+      "ci_upper": 0.3054,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.1954,
+      "ci_lower": 0.0906,
+      "ci_upper": 0.328,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.3174,
+      "ci_lower": 0.2268,
+      "ci_upper": 0.4199,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.3135,
+      "ci_lower": 0.2722,
+      "ci_upper": 0.3566,
+      "count": 95
+    }
+  },
+  "bm25_rerank/gemini-3-pro-preview": {
+    "both": {
+      "mean": 0.4577,
+      "ci_lower": 0.4291,
+      "ci_upper": 0.4864,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.4564,
+      "ci_lower": 0.3137,
+      "ci_upper": 0.6056,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.5234,
+      "ci_lower": 0.4537,
+      "ci_upper": 0.5982,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.5091,
+      "ci_lower": 0.4689,
+      "ci_upper": 0.5516,
+      "count": 95
+    }
+  },
+  "agent/gemini-3-pro-preview": {
+    "both": {
+      "mean": 0.3757,
+      "ci_lower": 0.3471,
+      "ci_upper": 0.4049,
+      "count": 153
+    },
+    "novel": {
+      "mean": 0.3188,
+      "ci_lower": 0.1938,
+      "ci_upper": 0.4575,
+      "count": 17
+    },
+    "papers_only": {
+      "mean": 0.3513,
+      "ci_lower": 0.2678,
+      "ci_upper": 0.4389,
+      "count": 33
+    },
+    "patents_only": {
+      "mean": 0.4586,
+      "ci_lower": 0.4131,
+      "ci_upper": 0.5063,
+      "count": 95
+    }
+  }
+}

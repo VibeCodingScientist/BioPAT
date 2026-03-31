@@ -1,0 +1,540 @@
+{
+  "all_wrong": [
+    {
+      "statement_id": "RN020",
+      "text": "An analytical test device comprising a base with a reaction area and visualization area, where analysis chemistry reagents include a nucleic acid substrate with a first label and a nucleic acid reacto...",
+      "domain": "C12",
+      "category": "papers_only",
+      "ground_truth": "ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "NOVEL",
+        "Gemini 3 Pro": "PARTIALLY_ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN027",
+      "text": "A combination therapy comprising an anti-HLA-DR antibody-drug conjugate (ADC) incorporating SN-38 or pro-2PDOX administered at 1-18 mg/kg, combined with a Bruton's tyrosine kinase inhibitor or PI3K in...",
+      "domain": "A61",
+      "category": "both",
+      "ground_truth": "ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "NOVEL",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      }
+    },
+    {
+      "statement_id": "RN048",
+      "text": "A continuous analyte sensor calibration system that uses reference data from a short-term implanted continuous analyte sensor to initially calibrate or update sensor data from a separately implanted l...",
+      "domain": "A61",
+      "category": "patents_only",
+      "ground_truth": "ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      }
+    },
+    {
+      "statement_id": "RN109",
+      "text": "A droplet-based digital PCR method that forms sample droplets containing on average a single target nucleic acid, amplifies the target within droplets, and selectively excludes droplets containing bot...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN112",
+      "text": "A sperm cell suspension formulation comprising a motility inhibitor that preserves cell viability during flow cytometric sorting processes, resulting in post-sort compositions with increased numbers o...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "PARTIALLY_ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN114",
+      "text": "A non-human donor animal (swine) genetically engineered to lack wild-type surface glycan epitopes and having its swine leukocyte antigen (SLA) sequences replaced with synthetic nucleotides based on a ...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN118",
+      "text": "A method for preparing a nucleic acid sequencing library by amplifying a template nucleic acid using dNTPs combined with dUTP and random hexamer primers to incorporate occasional uracil bases into com...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN121",
+      "text": "Use of INT131, a selective PPAR\u03b3 agonist, alone or in combination with vitamin E, to treat nonalcoholic fatty liver disease (NAFLD), nonalcoholic steatohepatitis (NASH), and/or lipodystrophic syndrome...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN125",
+      "text": "An oligonucleotide adjuvant with antitumor activity comprising 2-4 CpG motifs (5'-X1CpGX2-3') within a 14-32 nucleotide sequence, wherein the nucleic acids at both the 3' and 5' termini are S-type (st...",
+      "domain": "C12",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "ANTICIPATED"
+      }
+    },
+    {
+      "statement_id": "RN142",
+      "text": "A method for synthesizing a bifunctional complex comprising a display molecule part and a coding part, wherein a nascent bifunctional complex having both a chemical reaction site and a priming site is...",
+      "domain": "C07",
+      "category": "both",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "predictions": {
+        "GPT-5.2": "ANTICIPATED",
+        "Claude Sonnet 4.6": "ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      }
+    }
+  ],
+  "all_wrong_count": 41,
+  "one_model_correct": {
+    "Gemini 3 Pro": [
+      {
+        "statement_id": "RN001",
+        "text": "A method for distinguishing agonistic anti-B7-H1 (PD-L1) antibodies from antagonistic anti-B7-H1 antibodies using a functional assay or binding characterization that differentiates antibodies that act...",
+        "domain": "A61",
+        "category": "papers_only",
+        "ground_truth": "NOVEL",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN033",
+        "text": "Engineered immunostimulatory bacteria encoding RNAi molecules (shRNA or microRNA) that inhibit TREX1 (three prime repair exonuclease 1) expression, formulated for treating HPV-positive tumors or tumor...",
+        "domain": "A61",
+        "category": "novel",
+        "ground_truth": "NOVEL",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN052",
+        "text": "Ligands bearing site-specific conjugated electron-donating substituents that form transition metal catalyst complexes with enhanced ATRP equilibrium constants, enabling atom transfer radical polymeriz...",
+        "domain": "A61",
+        "category": "papers_only",
+        "ground_truth": "NOVEL",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN091",
+        "text": "A method of inducing or modulating reward- or aversive-related behaviors in an animal by expressing light-responsive opsins in neurons projecting to the ventral tegmental area and selectively activati...",
+        "domain": "C07",
+        "category": "papers_only",
+        "ground_truth": "NOVEL",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN097",
+        "text": "Combined treatment of EGFR-mediated cancer using anti-EGFR monoclonal antibody mAb806 in combination with a src kinase inhibitor, wherein simultaneous or sequential inhibition of both EGFR and src pat...",
+        "domain": "A61",
+        "category": "novel",
+        "ground_truth": "NOVEL",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      }
+    ],
+    "Claude Sonnet 4.6": [
+      {
+        "statement_id": "RN010",
+        "text": "A dual-strip lateral flow assay device that simultaneously differentiates viral from bacterial infections by using a first chromatographic test strip to detect MxA protein and low-level C-reactive pro...",
+        "domain": "C12",
+        "category": "both",
+        "ground_truth": "ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "ANTICIPATED",
+          "Gemini 3 Pro": "PARTIALLY_ANTICIPATED"
+        }
+      },
+      {
+        "statement_id": "RN072",
+        "text": "Bifunctional degrader molecules (Degronimers) comprising a glutarimide-based E3 ubiquitin ligase-binding degron linked to a target protein ligand via a carbon-carbon bond at the C3 position of the glu...",
+        "domain": "C12",
+        "category": "papers_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "NOVEL",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN073",
+        "text": "A therapeutic combination comprising temsirolimus (an mTOR inhibitor), trastuzumab (HER2-targeting monoclonal antibody), and/or HKI-272 (neratinib, an irreversible pan-HER tyrosine kinase inhibitor) f...",
+        "domain": "A61",
+        "category": "papers_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN100",
+        "text": "A method of sequencing low-complexity amplicon libraries arrayed at high density on a surface, wherein amplicons are prepared using primer sets designed to ensure that initial sequencing-by-synthesis ...",
+        "domain": "C07",
+        "category": "papers_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "NOVEL",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN262",
+        "text": "A multilayer stretchable electronic device in which a neutral mechanical surface is positioned coincident or proximate to a functional device layer susceptible to strain-induced failure by incorporati...",
+        "domain": "C12",
+        "category": "patents_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "ANTICIPATED",
+          "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+          "Gemini 3 Pro": "ANTICIPATED"
+        }
+      }
+    ],
+    "GPT-5.2": [
+      {
+        "statement_id": "RN045",
+        "text": "Amino derivatives of EM-138 (a thalidomide-related compound) and their thalidomide precursors, analogs, metabolites, and hydrolysis products inhibit angiogenesis when administered orally, providing tr...",
+        "domain": "C07",
+        "category": "patents_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "ANTICIPATED",
+          "Gemini 3 Pro": "ANTICIPATED"
+        }
+      },
+      {
+        "statement_id": "RN196",
+        "text": "A method for treating tracheobronchomalacia (TBM) in a patient diagnosed with hypophosphatasia (HPP) by administering a soluble alkaline phosphatase (sALP), thereby addressing the TBM as a clinical ma...",
+        "domain": "A61",
+        "category": "both",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "NOVEL",
+          "Gemini 3 Pro": "NOVEL"
+        }
+      },
+      {
+        "statement_id": "RN231",
+        "text": "A method for treating cancer by first administering a Btk inhibitor to cause an increase or appearance of a specific lymphocyte subpopulation in blood (identified by immunophenotyping), then measuring...",
+        "domain": "A61",
+        "category": "patents_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "ANTICIPATED",
+          "Gemini 3 Pro": "ANTICIPATED"
+        }
+      },
+      {
+        "statement_id": "RN274",
+        "text": "Gel beads are functionalized with barcode molecules generated through two or more sequential ligation reactions in a combinatorial fashion, where each barcode molecule comprises a barcode sequence and...",
+        "domain": "C07",
+        "category": "patents_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "ANTICIPATED",
+          "Gemini 3 Pro": "ANTICIPATED"
+        }
+      },
+      {
+        "statement_id": "RN286",
+        "text": "Barcoded oligonucleotides bound to gel beads are used to simultaneously characterize multiple analyte types\u2014including cell surface proteins, intracellular proteins, genomic DNA, and RNA\u2014within a singl...",
+        "domain": "C07",
+        "category": "patents_only",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "predictions": {
+          "GPT-5.2": "PARTIALLY_ANTICIPATED",
+          "Claude Sonnet 4.6": "ANTICIPATED",
+          "Gemini 3 Pro": "ANTICIPATED"
+        }
+      }
+    ]
+  },
+  "one_model_correct_counts": {
+    "Gemini 3 Pro": 12,
+    "Claude Sonnet 4.6": 7,
+    "GPT-5.2": 7
+  },
+  "all_correct_count": 184,
+  "novel_cases": [
+    {
+      "statement_id": "RN001",
+      "text": "A method for distinguishing agonistic anti-B7-H1 (PD-L1) antibodies from antagonistic anti-B7-H1 antibodies using a functional assay or binding characterization that differentiates antibodies that act...",
+      "domain": "A61",
+      "category": "papers_only",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 1
+    },
+    {
+      "statement_id": "RN033",
+      "text": "Engineered immunostimulatory bacteria encoding RNAi molecules (shRNA or microRNA) that inhibit TREX1 (three prime repair exonuclease 1) expression, formulated for treating HPV-positive tumors or tumor...",
+      "domain": "A61",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 1
+    },
+    {
+      "statement_id": "RN052",
+      "text": "Ligands bearing site-specific conjugated electron-donating substituents that form transition metal catalyst complexes with enhanced ATRP equilibrium constants, enabling atom transfer radical polymeriz...",
+      "domain": "A61",
+      "category": "papers_only",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 1
+    },
+    {
+      "statement_id": "RN091",
+      "text": "A method of inducing or modulating reward- or aversive-related behaviors in an animal by expressing light-responsive opsins in neurons projecting to the ventral tegmental area and selectively activati...",
+      "domain": "C07",
+      "category": "papers_only",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 1
+    },
+    {
+      "statement_id": "RN097",
+      "text": "Combined treatment of EGFR-mediated cancer using anti-EGFR monoclonal antibody mAb806 in combination with a src kinase inhibitor, wherein simultaneous or sequential inhibition of both EGFR and src pat...",
+      "domain": "A61",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 1
+    },
+    {
+      "statement_id": "RN030",
+      "text": "A method for diagnosing pervasive developmental disorders (PDDs), dysautonomia, Parkinson's disease, and SIDS by analyzing a stool sample using immunoassay to detect antigens associated with specific ...",
+      "domain": "C07",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "NOVEL",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 2
+    },
+    {
+      "statement_id": "RN040",
+      "text": "A transdermal drug delivery method using an occlusive patch to deliver cannabinoids\u2014including cannabidiol, cannabinol, nabilone, or specific THC derivatives\u2014in combination with specific permeation enh...",
+      "domain": "A61",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "NOVEL",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 2
+    },
+    {
+      "statement_id": "RN051",
+      "text": "A genetically modified non-human animal whose genome comprises an endogenous EPO gene locus modified to express human erythropoietin (EPO), enabling humanized erythropoiesis modeling and in vivo scree...",
+      "domain": "C12",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "NOVEL",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 2
+    },
+    {
+      "statement_id": "RN053",
+      "text": "An optical coherence imaging detector system wherein at least one detector has an electrical integration time during which it receives a signal combining sample and reference electromagnetic radiation...",
+      "domain": "C12",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "PARTIALLY_ANTICIPATED",
+        "Claude Sonnet 4.6": "NOVEL",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 2
+    },
+    {
+      "statement_id": "RN071",
+      "text": "Tocopherol quinone derivatives bearing fluoroalkyl, fluoroalkoxy, phenoxy, heteroaryloxy, alkoxy, or amine substituents at the 1,4-benzoquinone core are used to treat oxidative stress disorders includ...",
+      "domain": "C07",
+      "category": "novel",
+      "ground_truth": "NOVEL",
+      "predictions": {
+        "GPT-5.2": "NOVEL",
+        "Claude Sonnet 4.6": "PARTIALLY_ANTICIPATED",
+        "Gemini 3 Pro": "NOVEL"
+      },
+      "num_correct": 2
+    }
+  ],
+  "novel_total": 18,
+  "context_sensitivity": {
+    "improved_count": 119,
+    "regressed_count": 42,
+    "examples_improved": [
+      {
+        "statement_id": "RN002",
+        "model": "GPT-5.2",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "PARTIALLY_ANTICIPATED",
+        "pred_k20": "ANTICIPATED",
+        "improved": true
+      },
+      {
+        "statement_id": "RN002",
+        "model": "Claude Sonnet 4.6",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "PARTIALLY_ANTICIPATED",
+        "pred_k20": "ANTICIPATED",
+        "improved": true
+      },
+      {
+        "statement_id": "RN005",
+        "model": "GPT-5.2",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "PARTIALLY_ANTICIPATED",
+        "pred_k20": "ANTICIPATED",
+        "improved": true
+      },
+      {
+        "statement_id": "RN009",
+        "model": "Gemini 3 Pro",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "NOVEL",
+        "pred_k20": "ANTICIPATED",
+        "improved": true
+      },
+      {
+        "statement_id": "RN015",
+        "model": "GPT-5.2",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "PARTIALLY_ANTICIPATED",
+        "pred_k20": "ANTICIPATED",
+        "improved": true
+      }
+    ],
+    "examples_regressed": [
+      {
+        "statement_id": "RN001",
+        "model": "GPT-5.2",
+        "ground_truth": "NOVEL",
+        "pred_k1": "NOVEL",
+        "pred_k20": "PARTIALLY_ANTICIPATED",
+        "improved": false
+      },
+      {
+        "statement_id": "RN006",
+        "model": "Gemini 3 Pro",
+        "ground_truth": "PARTIALLY_ANTICIPATED",
+        "pred_k1": "PARTIALLY_ANTICIPATED",
+        "pred_k20": "ANTICIPATED",
+        "improved": false
+      },
+      {
+        "statement_id": "RN014",
+        "model": "GPT-5.2",
+        "ground_truth": "ANTICIPATED",
+        "pred_k1": "ANTICIPATED",
+        "pred_k20": "PARTIALLY_ANTICIPATED",
+        "improved": false
+      },
+      {
+        "statement_id": "RN030",
+        "model": "Claude Sonnet 4.6",
+        "ground_truth": "NOVEL",
+        "pred_k1": "NOVEL",
+        "pred_k20": "PARTIALLY_ANTICIPATED",
+        "improved": false
+      },
+      {
+        "statement_id": "RN040",
+        "model": "GPT-5.2",
+        "ground_truth": "NOVEL",
+        "pred_k1": "NOVEL",
+        "pred_k20": "PARTIALLY_ANTICIPATED",
+        "improved": false
+      }
+    ]
+  }
+}

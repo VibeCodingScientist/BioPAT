@@ -1,0 +1,1208 @@
+{
+  "tier": 3,
+  "method": "novelty_zs",
+  "model": "claude-sonnet-4-6",
+  "metrics": {
+    "accuracy": 0.5185185185185185,
+    "macro_f1": 0.4168547360172397,
+    "f1_novel": 0.13999999999999999,
+    "f1_partially_anticipated": 0.43373493975903615,
+    "f1_anticipated": 0.6768292682926831
+  },
+  "per_query": {
+    "RN001": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN002": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN003": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN004": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN005": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN006": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN007": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN008": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN009": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN010": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN011": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN012": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN013": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN014": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN015": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN016": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN017": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN018": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN019": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN020": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN021": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN022": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN023": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN024": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN025": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN026": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN027": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN028": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN029": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN030": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN031": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN032": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN033": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN034": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN035": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN036": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN037": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN038": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN039": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN040": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN041": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN042": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN043": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN044": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN045": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN046": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN047": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN048": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN049": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN050": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN051": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN052": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN053": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN054": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN055": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN056": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN057": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN058": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN059": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN060": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN061": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN062": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN063": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN064": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN065": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN066": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN067": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN068": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN069": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN070": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN071": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN072": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN073": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN074": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN075": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN076": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN077": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN078": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN079": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN080": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN081": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN082": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN083": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN084": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN085": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN086": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN087": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN088": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN089": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN090": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN091": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN092": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN093": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN094": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN095": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN096": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN097": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN098": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN099": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN100": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN101": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN102": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN103": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN104": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN105": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN106": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN107": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN108": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN109": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN110": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN111": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN112": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN113": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN114": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN115": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN116": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN117": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN118": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN119": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN120": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN121": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN122": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN123": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN124": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN125": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN126": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN127": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN128": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN129": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN130": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN131": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN132": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN133": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN134": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN135": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN136": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN137": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN138": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN139": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN140": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN141": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN142": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN143": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN144": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN145": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN146": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN147": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN148": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN149": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN150": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN151": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN152": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN153": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN154": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN155": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN156": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN157": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN158": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN159": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN160": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN161": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN162": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN163": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN164": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN165": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN166": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN167": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN168": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN169": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN170": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN171": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN172": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN173": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN174": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN175": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN176": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN177": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN178": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN179": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN180": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN181": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN182": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN183": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN184": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN185": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN186": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN187": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN188": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN189": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN190": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN191": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN192": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN193": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN194": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN195": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN196": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN197": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN198": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN199": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN200": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN201": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN202": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN203": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN204": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN206": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN207": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN208": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN209": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN210": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN212": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN213": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN214": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN215": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN216": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN217": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN218": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN219": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN220": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN221": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN222": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN223": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN224": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN225": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN226": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN227": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN228": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN229": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN230": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN231": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN232": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN233": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN234": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN235": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN236": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN237": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN238": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN239": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN240": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN241": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN242": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN243": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN244": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN245": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN246": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN247": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN248": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN249": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN250": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN251": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN252": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN253": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN254": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN255": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN256": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN257": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN258": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN259": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN260": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN261": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN262": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN263": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN264": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN265": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN266": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN267": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN268": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN269": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN270": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN271": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN272": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN273": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN274": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN275": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN276": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN277": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN278": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN279": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN280": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN281": {
+      "correct": 0.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN282": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN283": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN285": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN286": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN287": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN288": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN289": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN290": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN291": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN292": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN293": {
+      "correct": 1.0,
+      "predicted": "ANTICIPATED"
+    },
+    "RN294": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN295": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN296": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN297": {
+      "correct": 0.0,
+      "predicted": "NOVEL"
+    },
+    "RN298": {
+      "correct": 0.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    },
+    "RN299": {
+      "correct": 1.0,
+      "predicted": "NOVEL"
+    },
+    "RN300": {
+      "correct": 1.0,
+      "predicted": "PARTIALLY_ANTICIPATED"
+    }
+  },
+  "cost_usd": 13.484352999999986,
+  "elapsed_seconds": 9013.54591345787,
+  "metadata": {
+    "with_context": false,
+    "context_k": 10
+  }
+}

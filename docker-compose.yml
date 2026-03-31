@@ -1,0 +1,19 @@
+services:
+  benchmark:
+    build: .
+    container_name: biopat-benchmark
+    env_file: .env
+    environment:
+      - BIOPAT_CPU_ONLY=true
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+      - ./configs:/app/configs
+      - ./src:/app/src
+    working_dir: /app
+    # Override CMD as needed:
+    #   docker-compose run benchmark python -m biopat.pipeline --config configs/default.yaml
+    #   docker-compose run benchmark python scripts/run_experiments.py --config configs/experiments.yaml
+    command: ["python", "-m", "biopat.pipeline", "--config", "configs/default.yaml"]

@@ -1,0 +1,197 @@
+{
+  "tier1": {
+    "bm25/N/A_vs_bm25_rerank/gpt-5.2": {
+      "metric": "recall@10",
+      "mean_diff": -0.0832,
+      "ci_lower": -0.0993,
+      "ci_upper": -0.068,
+      "significant": true
+    },
+    "bm25/N/A_vs_agent/gpt-5.2": {
+      "metric": "recall@10",
+      "mean_diff": 0.2949,
+      "ci_lower": 0.2694,
+      "ci_upper": 0.3209,
+      "significant": true
+    },
+    "bm25/N/A_vs_bm25_rerank/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": -0.0814,
+      "ci_lower": -0.0973,
+      "ci_upper": -0.0666,
+      "significant": true
+    },
+    "bm25/N/A_vs_agent/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": 0.1925,
+      "ci_lower": 0.1696,
+      "ci_upper": 0.2161,
+      "significant": true
+    },
+    "bm25/N/A_vs_bm25_rerank/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "significant": false
+    },
+    "bm25/N/A_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.0851,
+      "ci_lower": 0.0643,
+      "ci_upper": 0.1066,
+      "significant": true
+    },
+    "bm25_rerank/gpt-5.2_vs_agent/gpt-5.2": {
+      "metric": "recall@10",
+      "mean_diff": 0.3781,
+      "ci_lower": 0.3484,
+      "ci_upper": 0.4078,
+      "significant": true
+    },
+    "bm25_rerank/gpt-5.2_vs_bm25_rerank/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": 0.0018,
+      "ci_lower": -0.0036,
+      "ci_upper": 0.0074,
+      "significant": false
+    },
+    "bm25_rerank/gpt-5.2_vs_agent/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": 0.2757,
+      "ci_lower": 0.2502,
+      "ci_upper": 0.3024,
+      "significant": true
+    },
+    "bm25_rerank/gpt-5.2_vs_bm25_rerank/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.0832,
+      "ci_lower": 0.068,
+      "ci_upper": 0.0993,
+      "significant": true
+    },
+    "bm25_rerank/gpt-5.2_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.1683,
+      "ci_lower": 0.1443,
+      "ci_upper": 0.1933,
+      "significant": true
+    },
+    "agent/gpt-5.2_vs_bm25_rerank/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": -0.3763,
+      "ci_lower": -0.4061,
+      "ci_upper": -0.3461,
+      "significant": true
+    },
+    "agent/gpt-5.2_vs_agent/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": -0.1024,
+      "ci_lower": -0.1246,
+      "ci_upper": -0.08,
+      "significant": true
+    },
+    "agent/gpt-5.2_vs_bm25_rerank/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": -0.2949,
+      "ci_lower": -0.3209,
+      "ci_upper": -0.2694,
+      "significant": true
+    },
+    "agent/gpt-5.2_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": -0.2098,
+      "ci_lower": -0.2373,
+      "ci_upper": -0.1832,
+      "significant": true
+    },
+    "bm25_rerank/claude-sonnet-4-6_vs_agent/claude-sonnet-4-6": {
+      "metric": "recall@10",
+      "mean_diff": 0.2739,
+      "ci_lower": 0.2485,
+      "ci_upper": 0.3005,
+      "significant": true
+    },
+    "bm25_rerank/claude-sonnet-4-6_vs_bm25_rerank/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.0814,
+      "ci_lower": 0.0666,
+      "ci_upper": 0.0973,
+      "significant": true
+    },
+    "bm25_rerank/claude-sonnet-4-6_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.1665,
+      "ci_lower": 0.1424,
+      "ci_upper": 0.1915,
+      "significant": true
+    },
+    "agent/claude-sonnet-4-6_vs_bm25_rerank/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": -0.1925,
+      "ci_lower": -0.2161,
+      "ci_upper": -0.1696,
+      "significant": true
+    },
+    "agent/claude-sonnet-4-6_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": -0.1074,
+      "ci_lower": -0.1333,
+      "ci_upper": -0.0816,
+      "significant": true
+    },
+    "bm25_rerank/gemini-3-pro-preview_vs_agent/gemini-3-pro-preview": {
+      "metric": "recall@10",
+      "mean_diff": 0.0851,
+      "ci_lower": 0.0643,
+      "ci_upper": 0.1066,
+      "significant": true
+    }
+  },
+  "tier2": {
+    "gpt-5.2_vs_claude-sonnet-4-6": {
+      "metric": "accuracy",
+      "mean_diff": -0.0256,
+      "ci_lower": -0.0481,
+      "ci_upper": -0.0046,
+      "significant": true
+    },
+    "gpt-5.2_vs_gemini-3-pro-preview": {
+      "metric": "accuracy",
+      "mean_diff": 0.0483,
+      "ci_lower": 0.0218,
+      "ci_upper": 0.0742,
+      "significant": true
+    },
+    "claude-sonnet-4-6_vs_gemini-3-pro-preview": {
+      "metric": "accuracy",
+      "mean_diff": 0.0738,
+      "ci_lower": 0.0499,
+      "ci_upper": 0.0971,
+      "significant": true
+    }
+  },
+  "tier3_ctx": {
+    "gpt-5.2_vs_claude-sonnet-4-6": {
+      "metric": "accuracy (ctx)",
+      "mean_diff": -0.0177,
+      "ci_lower": -0.0603,
+      "ci_upper": 0.0248,
+      "significant": false
+    },
+    "gpt-5.2_vs_gemini-3-pro-preview": {
+      "metric": "accuracy (ctx)",
+      "mean_diff": 0.0142,
+      "ci_lower": -0.0319,
+      "ci_upper": 0.0603,
+      "significant": false
+    },
+    "claude-sonnet-4-6_vs_gemini-3-pro-preview": {
+      "metric": "accuracy (ctx)",
+      "mean_diff": 0.0319,
+      "ci_lower": -0.0177,
+      "ci_upper": 0.078,
+      "significant": false
+    }
+  }
+}

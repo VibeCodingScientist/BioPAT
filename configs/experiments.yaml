@@ -1,0 +1,97 @@
+# BioPAT Benchmark — Experiment Definitions
+# Configures all LLM evaluation experiments
+
+# LLM models under evaluation
+models:
+  gpt52:
+    provider: openai
+    model_id: gpt-5.2
+    display_name: "GPT-5.2"
+  opus46:
+    provider: anthropic
+    model_id: claude-opus-4-6
+    display_name: "Claude Opus 4.6"
+  sonnet45:
+    provider: anthropic
+    model_id: claude-sonnet-4-5-20250929
+    display_name: "Claude Sonnet 4.5"
+  gemini25pro:
+    provider: google
+    model_id: gemini-2.5-pro
+    display_name: "Gemini 2.5 Pro"
+
+# Shared embedding model for fair comparison (HyDE, dense baselines)
+embedding_model: BAAI/bge-base-en-v1.5
+
+# Experiments to run
+experiments:
+  # Exp 1: BM25 baseline (no LLM, CPU-only)
+  bm25_baseline:
+    enabled: true
+    description: "BM25 sparse retrieval baseline"
+    top_k: 100
+    k_values: [10, 50, 100]
+    splits: ["test"]
+
+  # Exp 2: Dense retrieval baselines (no LLM, CPU-only)
+  dense_baseline:
+    enabled: true
+    description: "Dense retrieval baselines with sentence-transformers"
+    models:
+      - all-MiniLM-L6-v2
+      - BAAI/bge-base-en-v1.5
+    batch_size: 16
+    top_k: 100
+    k_values: [10, 50, 100]
+    splits: ["test"]
+
+  # Exp 3: HyDE query expansion (per LLM)
+  hyde:
+    enabled: true
+    description: "Hypothetical Document Embeddings using each LLM"
+    llm_models: [gpt52, opus46, sonnet45, gemini25pro]
+    embedding_model: BAAI/bge-base-en-v1.5
+    max_queries: null  # null = all queries in test set
+    max_tokens: 256
+    temperature: 0.7
+    top_k: 100
+    k_values: [10, 50, 100]
+
+  # Exp 4: LLM listwise reranking (per LLM)
+  reranking:
+    enabled: true
+    description: "Listwise LLM reranking of BM25 top-100"
+    llm_models: [gpt52, opus46, sonnet45, gemini25pro]
+    bm25_top_k: 100
+    rerank_window: 20  # Send top-20 to LLM in single prompt
+    max_queries: 500   # Subsample for expensive models
+    k_values: [10, 20]
+
+  # Exp 5: LLM relevance judgment agreement (per LLM)
+  relevance_judgment:
+    enabled: true
+    description: "LLM graded relevance judgment vs silver standard"
+    llm_models: [gpt52, opus46, sonnet45, gemini25pro]
+    num_pairs: 500     # Stratified query-doc pairs
+    relevance_scale: [0, 1, 2, 3]  # 4-tier graded relevance
+
+  # Exp 6: Full novelty assessment pipeline (per LLM)
+  novelty_assessment:
+    enabled: true
+    description: "End-to-end novelty assessment pipeline"
+    llm_models: [gpt52, opus46, sonnet45, gemini25pro]
+    num_patents: 100   # Stratified by IPC domain
+    retrieval_top_k: 50
+    max_refs_per_patent: 10
+
+# Budget and controls
+budget:
+  max_total_usd: 500.0
+  warn_at_usd: 400.0
+
+# Output settings
+output:
+  results_dir: data/results
+  tables_dir: results/tables
+  analysis_dir: results/analysis
+  checkpoint_dir: data/results/checkpoints

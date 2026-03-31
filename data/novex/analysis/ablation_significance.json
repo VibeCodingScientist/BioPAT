@@ -1,0 +1,302 @@
+{
+  "GPT-5.2": {
+    "k1_vs_k3": {
+      "k_from": 1,
+      "k_to": 3,
+      "n_queries": 300,
+      "acc_from": 0.5633,
+      "acc_to": 0.7033,
+      "diff": 0.14,
+      "ci_95": [
+        0.0867,
+        0.1933
+      ],
+      "p_value": 0.0,
+      "significant_at_05": true
+    },
+    "k3_vs_k5": {
+      "k_from": 3,
+      "k_to": 5,
+      "n_queries": 300,
+      "acc_from": 0.7033,
+      "acc_to": 0.7467,
+      "diff": 0.0433,
+      "ci_95": [
+        0.0033,
+        0.0833
+      ],
+      "p_value": 0.0452,
+      "significant_at_05": true
+    },
+    "k5_vs_k10": {
+      "k_from": 5,
+      "k_to": 10,
+      "n_queries": 300,
+      "acc_from": 0.7467,
+      "acc_to": 0.7567,
+      "diff": 0.01,
+      "ci_95": [
+        -0.0267,
+        0.0467
+      ],
+      "p_value": 0.6574,
+      "significant_at_05": false
+    },
+    "k10_vs_k20": {
+      "k_from": 10,
+      "k_to": 20,
+      "n_queries": 300,
+      "acc_from": 0.7567,
+      "acc_to": 0.7533,
+      "diff": -0.0033,
+      "ci_95": [
+        -0.0367,
+        0.0333
+      ],
+      "p_value": 0.9198,
+      "significant_at_05": false
+    },
+    "k1_vs_k10": {
+      "k_from": 1,
+      "k_to": 10,
+      "n_queries": 300,
+      "acc_from": 0.5633,
+      "acc_to": 0.7567,
+      "diff": 0.1933,
+      "ci_95": [
+        0.1367,
+        0.25
+      ],
+      "p_value": 0.0,
+      "significant_at_05": true
+    },
+    "k1_vs_k20": {
+      "k_from": 1,
+      "k_to": 20,
+      "n_queries": 300,
+      "acc_from": 0.5633,
+      "acc_to": 0.7533,
+      "diff": 0.19,
+      "ci_95": [
+        0.13,
+        0.2467
+      ],
+      "p_value": 0.0,
+      "significant_at_05": true
+    },
+    "k5_vs_k20": {
+      "k_from": 5,
+      "k_to": 20,
+      "n_queries": 300,
+      "acc_from": 0.7467,
+      "acc_to": 0.7533,
+      "diff": 0.0067,
+      "ci_95": [
+        -0.0267,
+        0.04
+      ],
+      "p_value": 0.773,
+      "significant_at_05": false
+    }
+  },
+  "Claude Sonnet 4.6": {
+    "k1_vs_k3": {
+      "k_from": 1,
+      "k_to": 3,
+      "n_queries": 299,
+      "acc_from": 0.7057,
+      "acc_to": 0.7458,
+      "diff": 0.0401,
+      "ci_95": [
+        -0.0033,
+        0.0836
+      ],
+      "p_value": 0.085,
+      "significant_at_05": false
+    },
+    "k3_vs_k5": {
+      "k_from": 3,
+      "k_to": 5,
+      "n_queries": 299,
+      "acc_from": 0.7458,
+      "acc_to": 0.7592,
+      "diff": 0.0134,
+      "ci_95": [
+        -0.0134,
+        0.0401
+      ],
+      "p_value": 0.3822,
+      "significant_at_05": false
+    },
+    "k5_vs_k10": {
+      "k_from": 5,
+      "k_to": 10,
+      "n_queries": 299,
+      "acc_from": 0.7592,
+      "acc_to": 0.7559,
+      "diff": -0.0033,
+      "ci_95": [
+        -0.0401,
+        0.0301
+      ],
+      "p_value": 0.9044,
+      "significant_at_05": false
+    },
+    "k10_vs_k20": {
+      "k_from": 10,
+      "k_to": 20,
+      "n_queries": 299,
+      "acc_from": 0.7559,
+      "acc_to": 0.7559,
+      "diff": 0.0,
+      "ci_95": [
+        -0.0301,
+        0.0301
+      ],
+      "p_value": 1.0,
+      "significant_at_05": false
+    },
+    "k1_vs_k10": {
+      "k_from": 1,
+      "k_to": 10,
+      "n_queries": 299,
+      "acc_from": 0.7057,
+      "acc_to": 0.7559,
+      "diff": 0.0502,
+      "ci_95": [
+        0.0,
+        0.097
+      ],
+      "p_value": 0.0504,
+      "significant_at_05": false
+    },
+    "k1_vs_k20": {
+      "k_from": 1,
+      "k_to": 20,
+      "n_queries": 299,
+      "acc_from": 0.7057,
+      "acc_to": 0.7559,
+      "diff": 0.0502,
+      "ci_95": [
+        0.0033,
+        0.097
+      ],
+      "p_value": 0.0396,
+      "significant_at_05": true
+    },
+    "k5_vs_k20": {
+      "k_from": 5,
+      "k_to": 20,
+      "n_queries": 299,
+      "acc_from": 0.7592,
+      "acc_to": 0.7559,
+      "diff": -0.0033,
+      "ci_95": [
+        -0.0368,
+        0.0301
+      ],
+      "p_value": 0.911,
+      "significant_at_05": false
+    }
+  },
+  "Gemini 3 Pro": {
+    "k1_vs_k3": {
+      "k_from": 1,
+      "k_to": 3,
+      "n_queries": 283,
+      "acc_from": 0.6996,
+      "acc_to": 0.7562,
+      "diff": 0.0565,
+      "ci_95": [
+        0.0212,
+        0.0954
+      ],
+      "p_value": 0.0026,
+      "significant_at_05": true
+    },
+    "k3_vs_k5": {
+      "k_from": 3,
+      "k_to": 5,
+      "n_queries": 278,
+      "acc_from": 0.7518,
+      "acc_to": 0.7446,
+      "diff": -0.0072,
+      "ci_95": [
+        -0.036,
+        0.018
+      ],
+      "p_value": 0.6778,
+      "significant_at_05": false
+    },
+    "k5_vs_k10": {
+      "k_from": 5,
+      "k_to": 10,
+      "n_queries": 275,
+      "acc_from": 0.7418,
+      "acc_to": 0.7309,
+      "diff": -0.0109,
+      "ci_95": [
+        -0.0364,
+        0.0145
+      ],
+      "p_value": 0.4874,
+      "significant_at_05": false
+    },
+    "k10_vs_k20": {
+      "k_from": 10,
+      "k_to": 20,
+      "n_queries": 275,
+      "acc_from": 0.7418,
+      "acc_to": 0.7455,
+      "diff": 0.0036,
+      "ci_95": [
+        -0.0255,
+        0.0327
+      ],
+      "p_value": 0.9056,
+      "significant_at_05": false
+    },
+    "k1_vs_k10": {
+      "k_from": 1,
+      "k_to": 10,
+      "n_queries": 278,
+      "acc_from": 0.705,
+      "acc_to": 0.7302,
+      "diff": 0.0252,
+      "ci_95": [
+        -0.0144,
+        0.0647
+      ],
+      "p_value": 0.243,
+      "significant_at_05": false
+    },
+    "k1_vs_k20": {
+      "k_from": 1,
+      "k_to": 20,
+      "n_queries": 275,
+      "acc_from": 0.7018,
+      "acc_to": 0.7418,
+      "diff": 0.04,
+      "ci_95": [
+        0.0036,
+        0.08
+      ],
+      "p_value": 0.045,
+      "significant_at_05": true
+    },
+    "k5_vs_k20": {
+      "k_from": 5,
+      "k_to": 20,
+      "n_queries": 272,
+      "acc_from": 0.7574,
+      "acc_to": 0.75,
+      "diff": -0.0074,
+      "ci_95": [
+        -0.0294,
+        0.011
+      ],
+      "p_value": 0.5938,
+      "significant_at_05": false
+    }
+  }
+}

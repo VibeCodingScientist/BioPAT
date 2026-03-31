@@ -1,0 +1,1521 @@
+{
+  "tier": 3,
+  "method": "novelty_ctx_no_reasoning",
+  "model": "claude-haiku-4-5-20251001",
+  "metrics": {
+    "accuracy": 0.44666666666666666,
+    "macro_f1": 0.3729069467965351,
+    "f1_novel": 0.2168674698795181,
+    "f1_partially_anticipated": 0.34065934065934067,
+    "f1_anticipated": 0.5611940298507463
+  },
+  "per_query": {
+    "RN001": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN002": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN003": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN004": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN005": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN006": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN007": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN008": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN009": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN010": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN011": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN012": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN013": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN014": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN015": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN016": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN017": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN018": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN019": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN020": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN021": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN022": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN023": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN024": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN025": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN026": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN027": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN028": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN029": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN030": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN031": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN032": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN033": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN034": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN035": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN036": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN037": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN038": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN039": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN040": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN041": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN042": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN043": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN044": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN045": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN046": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN047": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN048": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN049": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN050": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN051": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN052": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN053": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN054": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN055": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN056": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN057": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN058": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN059": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN060": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN061": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN062": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN063": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN064": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN065": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN066": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN067": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN068": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN069": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN070": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN071": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN072": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN073": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN074": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN075": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN076": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN077": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN078": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN079": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN080": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN081": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN082": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN083": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN084": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN085": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN086": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN087": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN088": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN089": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN090": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN091": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN092": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN093": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN094": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN095": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN096": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN097": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "NOVEL",
+      "correct": 0.0
+    },
+    "RN098": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN099": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN100": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN101": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN102": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN103": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN104": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN105": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN106": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN107": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN108": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN109": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN110": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN111": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN112": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN113": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN114": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN115": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN116": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN117": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN118": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN119": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN120": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN121": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN122": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN123": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN124": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN125": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN126": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN127": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN128": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN129": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN130": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN131": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN132": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN133": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN134": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN135": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN136": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN137": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN138": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN139": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN140": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN141": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN142": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN143": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN144": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN145": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN146": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN147": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN148": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN149": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN150": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN151": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN152": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN153": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN154": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN155": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN156": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN157": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN158": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN159": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN160": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN161": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN162": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN163": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN164": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN165": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN166": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN167": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN168": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN169": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN170": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN171": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN172": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN173": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN174": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN175": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN176": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN177": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN178": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN179": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN180": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN181": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN182": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN183": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN184": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN185": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN186": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN187": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN188": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN189": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN190": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN191": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN192": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN193": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN194": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN195": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN196": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN197": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN198": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN199": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN200": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN201": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN202": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN203": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN204": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN205": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN206": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN207": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN208": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN209": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN210": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN211": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN212": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN213": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN214": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN215": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN216": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN217": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN218": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN219": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN220": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN221": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN222": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN223": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN224": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN225": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN226": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN227": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN228": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN229": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN230": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN231": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN232": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN233": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN234": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN235": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN236": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN237": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN238": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN239": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN240": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN241": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN242": {
+      "predicted": "NOVEL",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN243": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN244": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN245": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN246": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN247": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN248": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN249": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN250": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN251": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN252": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN253": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN254": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN255": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN256": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN257": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN258": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN259": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN260": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN261": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN262": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN263": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN264": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN265": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN266": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN267": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN268": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN269": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN270": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN271": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN272": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN273": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN274": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN275": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN276": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN277": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN278": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN279": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN280": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN281": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN282": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN283": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN284": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN285": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN286": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN287": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN288": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN289": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN290": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN291": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN292": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN293": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN294": {
+      "predicted": "ANTICIPATED",
+      "ground_truth": "ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN295": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN296": {
+      "predicted": "PARTIALLY_ANTICIPATED",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 1.0
+    },
+    "RN297": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    },
+    "RN298": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN299": {
+      "predicted": "NOVEL",
+      "ground_truth": "NOVEL",
+      "correct": 1.0
+    },
+    "RN300": {
+      "predicted": "NOVEL",
+      "ground_truth": "PARTIALLY_ANTICIPATED",
+      "correct": 0.0
+    }
+  },
+  "cost_usd": 0.0,
+  "elapsed_seconds": 0.0,
+  "metadata": {
+    "with_context": true,
+    "evaluation_method": "claude_code_subagent_no_reasoning",
+    "note": "Baseline without chain-of-thought. Much lower accuracy (44.7%) due to lack of reasoning."
+  }
+}

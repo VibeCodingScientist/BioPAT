@@ -1,0 +1,68 @@
+[project]
+name = "biopat"
+version = "0.1.0"
+description = "BioPAT: Biomedical Patent-to-Article Retrieval Benchmark"
+requires-python = ">=3.11,<3.13"
+# REPRODUCIBILITY NOTE: Dependencies are pinned to specific versions or stable ranges
+# to ensure consistent behavior across different environments and time.
+# Update versions carefully and document changes in CHANGELOG.md
+dependencies = [
+    "httpx[http2]>=0.27.0,<0.28",
+    "polars>=1.0.0,<2.0",
+    "pyyaml>=6.0,<7.0",
+    "pydantic>=2.5.0,<3.0",
+    "diskcache>=5.6.0,<6.0",
+    "tqdm>=4.66.0,<5.0",
+    "python-dotenv>=1.0.0,<2.0",
+    "rank-bm25>=0.2.2,<0.3",
+    "lxml>=4.9.0,<6.0",
+]
+
+[project.optional-dependencies]
+evaluation = [
+    "sentence-transformers>=2.2.0,<4.0",
+    "faiss-cpu>=1.7.0,<2.0",
+    "torch>=2.0.0,<3.0",
+]
+dev = [
+    "pytest>=8.0.0,<9.0",
+    "pytest-cov>=4.1.0,<6.0",
+    "pytest-asyncio>=0.23.0,<1.0",
+    "black>=24.0.0,<25.0",
+    "isort>=5.13.0,<6.0",
+    "mypy>=1.8.0,<2.0",
+]
+llm = [
+    "openai>=1.0.0,<2.0",
+    "anthropic>=0.30.0,<1.0",
+    "google-genai>=1.0.0,<2.0",
+    "scipy>=1.11.0,<2.0",
+]
+advanced = [
+    "rdkit>=2023.9.1",  # Chemical structure handling
+]
+plots = [
+    "matplotlib>=3.8.0,<4.0",
+]
+all = [
+    "biopat[evaluation,dev,llm,advanced,plots]",
+]
+
+[project.scripts]
+biopat = "biopat.pipeline:run_phase1"
+
+[tool.setuptools]
+packages = ["biopat"]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
