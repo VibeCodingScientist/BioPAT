@@ -180,6 +180,9 @@ def main():
         elif stem.endswith("_ctx_k10_nocot"):
             model_safe = stem[:-len("_ctx_k10_nocot")]
             mode = "ctx_k10_nocot"
+        elif stem.endswith("_ctx_k10_reasoning"):
+            model_safe = stem[:-len("_ctx_k10_reasoning")]
+            mode = "ctx_k10_reasoning"
         else:
             continue
 

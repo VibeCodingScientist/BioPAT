@@ -169,6 +169,91 @@
       }
     }
   },
+  "deepseek_deepseek_r1_0528/ctx_k10_reasoning": {
+    "point": {
+      "n": 300,
+      "accuracy": 0.4167,
+      "balanced_accuracy": 0.4919,
+      "macro_f1": 0.3379,
+      "per_class": {
+        "NOVEL": {
+          "precision": 0.1034,
+          "recall": 0.8333,
+          "f1": 0.184,
+          "tp": 15,
+          "fp": 130,
+          "fn": 3
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "precision": 0.3421,
+          "recall": 0.1806,
+          "f1": 0.2364,
+          "tp": 13,
+          "fp": 25,
+          "fn": 59
+        },
+        "ANTICIPATED": {
+          "precision": 0.8291,
+          "recall": 0.4619,
+          "f1": 0.5933,
+          "tp": 97,
+          "fp": 20,
+          "fn": 113
+        }
+      },
+      "confusion_matrix": {
+        "NOVEL": {
+          "NOVEL": 15,
+          "PARTIALLY_ANTICIPATED": 40,
+          "ANTICIPATED": 90
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "NOVEL": 2,
+          "PARTIALLY_ANTICIPATED": 13,
+          "ANTICIPATED": 23
+        },
+        "ANTICIPATED": {
+          "NOVEL": 1,
+          "PARTIALLY_ANTICIPATED": 19,
+          "ANTICIPATED": 97
+        }
+      }
+    },
+    "bootstrap": {
+      "accuracy": {
+        "mean": 0.4166,
+        "ci_lower": 0.36,
+        "ci_upper": 0.47
+      },
+      "balanced_accuracy": {
+        "mean": 0.4918,
+        "ci_lower": 0.4155,
+        "ci_upper": 0.5575
+      },
+      "macro_f1": {
+        "mean": 0.3367,
+        "ci_lower": 0.2842,
+        "ci_upper": 0.3898
+      },
+      "per_class_f1": {
+        "NOVEL": {
+          "mean": 0.1829,
+          "ci_lower": 0.1029,
+          "ci_upper": 0.2651
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "mean": 0.2345,
+          "ci_lower": 0.129,
+          "ci_upper": 0.3425
+        },
+        "ANTICIPATED": {
+          "mean": 0.5926,
+          "ci_lower": 0.5283,
+          "ci_upper": 0.6534
+        }
+      }
+    }
+  },
   "meta_llama_llama_3_3_70b_instruct/ctx_k10_cot": {
     "point": {
       "n": 300,
@@ -509,6 +594,91 @@
       }
     }
   },
+  "nvidia_llama_3_3_nemotron_super_49b_v1_5/ctx_k10_reasoning": {
+    "point": {
+      "n": 300,
+      "accuracy": 0.3467,
+      "balanced_accuracy": 0.5029,
+      "macro_f1": 0.319,
+      "per_class": {
+        "NOVEL": {
+          "precision": 0.1019,
+          "recall": 0.8889,
+          "f1": 0.1829,
+          "tp": 16,
+          "fp": 141,
+          "fn": 2
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "precision": 0.2933,
+          "recall": 0.3056,
+          "f1": 0.2993,
+          "tp": 22,
+          "fp": 53,
+          "fn": 50
+        },
+        "ANTICIPATED": {
+          "precision": 0.9706,
+          "recall": 0.3143,
+          "f1": 0.4748,
+          "tp": 66,
+          "fp": 2,
+          "fn": 144
+        }
+      },
+      "confusion_matrix": {
+        "NOVEL": {
+          "NOVEL": 16,
+          "PARTIALLY_ANTICIPATED": 48,
+          "ANTICIPATED": 93
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "NOVEL": 2,
+          "PARTIALLY_ANTICIPATED": 22,
+          "ANTICIPATED": 51
+        },
+        "ANTICIPATED": {
+          "NOVEL": 0,
+          "PARTIALLY_ANTICIPATED": 2,
+          "ANTICIPATED": 66
+        }
+      }
+    },
+    "bootstrap": {
+      "accuracy": {
+        "mean": 0.3464,
+        "ci_lower": 0.2933,
+        "ci_upper": 0.4
+      },
+      "balanced_accuracy": {
+        "mean": 0.5023,
+        "ci_lower": 0.4346,
+        "ci_upper": 0.5629
+      },
+      "macro_f1": {
+        "mean": 0.3176,
+        "ci_lower": 0.267,
+        "ci_upper": 0.3697
+      },
+      "per_class_f1": {
+        "NOVEL": {
+          "mean": 0.1814,
+          "ci_lower": 0.1065,
+          "ci_upper": 0.2609
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "mean": 0.2976,
+          "ci_lower": 0.2027,
+          "ci_upper": 0.3922
+        },
+        "ANTICIPATED": {
+          "mean": 0.4739,
+          "ci_lower": 0.4,
+          "ci_upper": 0.5455
+        }
+      }
+    }
+  },
   "qwen_qwen_2_5_72b_instruct/ctx_k10_cot": {
     "point": {
       "n": 300,
@@ -675,6 +845,91 @@
           "mean": 0.0556,
           "ci_lower": 0.0183,
           "ci_upper": 0.1013
+        }
+      }
+    }
+  },
+  "qwen_qwq_32b/ctx_k10_reasoning": {
+    "point": {
+      "n": 290,
+      "accuracy": 0.4379,
+      "balanced_accuracy": 0.5448,
+      "macro_f1": 0.379,
+      "per_class": {
+        "NOVEL": {
+          "precision": 0.1221,
+          "recall": 0.8889,
+          "f1": 0.2148,
+          "tp": 16,
+          "fp": 115,
+          "fn": 2
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "precision": 0.3621,
+          "recall": 0.3,
+          "f1": 0.3281,
+          "tp": 21,
+          "fp": 37,
+          "fn": 49
+        },
+        "ANTICIPATED": {
+          "precision": 0.8911,
+          "recall": 0.4455,
+          "f1": 0.5941,
+          "tp": 90,
+          "fp": 11,
+          "fn": 112
+        }
+      },
+      "confusion_matrix": {
+        "NOVEL": {
+          "NOVEL": 16,
+          "PARTIALLY_ANTICIPATED": 38,
+          "ANTICIPATED": 77
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "NOVEL": 2,
+          "PARTIALLY_ANTICIPATED": 21,
+          "ANTICIPATED": 35
+        },
+        "ANTICIPATED": {
+          "NOVEL": 0,
+          "PARTIALLY_ANTICIPATED": 11,
+          "ANTICIPATED": 90
+        }
+      }
+    },
+    "bootstrap": {
+      "accuracy": {
+        "mean": 0.4379,
+        "ci_lower": 0.3793,
+        "ci_upper": 0.4966
+      },
+      "balanced_accuracy": {
+        "mean": 0.545,
+        "ci_lower": 0.4738,
+        "ci_upper": 0.6082
+      },
+      "macro_f1": {
+        "mean": 0.3777,
+        "ci_lower": 0.3228,
+        "ci_upper": 0.4332
+      },
+      "per_class_f1": {
+        "NOVEL": {
+          "mean": 0.2134,
+          "ci_lower": 0.126,
+          "ci_upper": 0.3046
+        },
+        "PARTIALLY_ANTICIPATED": {
+          "mean": 0.3265,
+          "ci_lower": 0.2222,
+          "ci_upper": 0.4306
+        },
+        "ANTICIPATED": {
+          "mean": 0.5933,
+          "ci_lower": 0.5249,
+          "ci_upper": 0.6578
         }
       }
     }

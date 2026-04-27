@@ -46,10 +46,15 @@ logger = logging.getLogger(__name__)
 
 
 PRICING = {
-    "meta-llama/llama-3.3-70b-instruct": (0.60, 0.90),
-    "deepseek/deepseek-chat": (0.30, 1.00),
-    "qwen/qwen-2.5-72b-instruct": (0.70, 1.00),
-    "mistralai/mistral-large": (2.00, 6.00),
+    # WP1 CoT/no-CoT models
+    "meta-llama/llama-3.3-70b-instruct": (0.14, 0.40),         # Novita bf16
+    "deepseek/deepseek-chat": (0.40, 1.30),                    # Novita fp8
+    "qwen/qwen-2.5-72b-instruct": (0.36, 0.40),                # DeepInfra fp8
+    "mistralai/mistral-large": (2.00, 6.00),                   # Mistral native
+    # WP1 reasoning-mode models
+    "deepseek/deepseek-r1-0528": (0.50, 2.18),                 # SiliconFlow fp8
+    "qwen/qwq-32b": (0.15, 0.58),                              # SiliconFlow fp8
+    "nvidia/llama-3.3-nemotron-super-49b-v1.5": (0.10, 0.40),  # DeepInfra fp8
 }
 
 NOVELTY_LABELS = {"NOVEL", "PARTIALLY_ANTICIPATED", "ANTICIPATED"}

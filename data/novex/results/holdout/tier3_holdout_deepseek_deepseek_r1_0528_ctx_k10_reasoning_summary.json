@@ -1,0 +1,14 @@
+{
+  "model": "deepseek/deepseek-r1-0528",
+  "provider_pinned": "SiliconFlow",
+  "mode": "ctx_k10_reasoning",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 2682.56,
+  "input_tokens": 131422,
+  "output_tokens": 221219,
+  "estimated_cost_usd": 0.547968,
+  "finished_at": "2026-04-27T13:57:22.868249"
+}

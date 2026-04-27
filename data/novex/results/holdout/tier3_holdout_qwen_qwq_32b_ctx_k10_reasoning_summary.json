@@ -1,0 +1,14 @@
+{
+  "model": "qwen/qwq-32b",
+  "provider_pinned": "SiliconFlow",
+  "mode": "ctx_k10_reasoning",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 10,
+  "n_total_completed": 290,
+  "n_target": 300,
+  "elapsed_seconds": 2152.46,
+  "input_tokens": 148353,
+  "output_tokens": 390503,
+  "estimated_cost_usd": 0.248745,
+  "finished_at": "2026-04-27T14:33:16.510769"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+  "provider_pinned": "DeepInfra",
+  "mode": "ctx_k10_reasoning",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 1450.84,
+  "input_tokens": 140846,
+  "output_tokens": 352935,
+  "estimated_cost_usd": 0.155259,
+  "finished_at": "2026-04-27T14:57:28.567654"
+}
