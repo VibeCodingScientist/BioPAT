@@ -169,9 +169,9 @@ ax2.set_xticks(list(mode_x.values()))
 ax2.set_xticklabels(modes)
 ax2.set_xlim(-0.3, 2.3)
 ax2.set_ylim(-0.1, 1.6)
-ax2.set_ylabel("Distribution deviation from GT (lower = better calibrated)")
+ax2.set_ylabel(r"$\sum_c |\mathrm{pred}_c - \mathrm{GT}_c|$  (lower = better calibrated)")
 ax2.set_xlabel("Reasoning mode")
-ax2.set_title("(B) Calibration: |pred dist − GT dist|", fontsize=10)
+ax2.set_title(r"(B) Calibration: $\sum_c |\mathrm{pred}_c - \mathrm{GT}_c|$", fontsize=10)
 ax2.grid(True, axis="y", alpha=0.3, linestyle=":")
 
 # Mode-specific failure annotations

@@ -109,4 +109,18 @@ DeepSeek-V3's 15.3% no-CoT accuracy is *not* parser-broken or single-class colla
 | Llama-3.3-Nemotron-Super-49B | $0.0000 | $0.0000 | $0.1553 | $0.1553 |
 | **Grand total (WP1 + reasoning rerun)** | | | | **$3.8613** |
 
-_Reasoning rerun cost alone: $0.9520 (under $2.54 estimate)._ 
+_Reasoning rerun cost alone: $0.9520 (under $2.54 estimate)._
+
+## 8. Footnote: QwQ-32B failures
+
+QwQ-32B (`qwen/qwq-32b` on SiliconFlow, `ctx_k10_reasoning` mode) had **10/300 calls fail** with empty raw response (TypeError on null content), yielding n=290 valid predictions. All other 10 model-mode runs reached 300/300 with zero failures. Failures cluster in RN200-RN207, suggesting a transient SiliconFlow-side issue rather than systematic. Bootstrap 95% CIs are computed over the 290 successful predictions; effect on point estimates is below 0.01 accuracy. Per-call audit: `tier3_holdout_provider_log.jsonl`.
+
+## 9. Cost ledger (final)
+
+| Phase | Cost |
+|---|---|
+| WP1 original (CoT + no-CoT × 4 models) | $2.91 |
+| Reasoning rerun (3 models × reasoning mode) | $0.95 |
+| **Total OpenRouter spend** | **$3.86** |
+
+All within the $10-15 cap.

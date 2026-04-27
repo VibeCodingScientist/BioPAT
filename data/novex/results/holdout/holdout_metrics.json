@@ -1,4 +1,11 @@
 {
+  "_footnotes": {
+    "qwq_32b_failures": "QwQ-32B (qwen/qwq-32b on SiliconFlow, ctx_k10_reasoning) had 10/300 calls fail with empty raw response (TypeError on null content), yielding n=290 valid predictions instead of 300. All other 10 model-mode runs reached 300/300 with 0 failures. The 10 failures are clustered (RN200, RN201, RN205-207, etc.) suggesting a transient SiliconFlow-side issue rather than systematic. Bootstrap CIs are computed over the 290 successful predictions; effect on point estimates is < 0.01 accuracy. See tier3_holdout_provider_log.jsonl for per-call audit.",
+    "schema_version": "1.0",
+    "n_target_per_run": 300,
+    "n_total_runs": 11,
+    "n_total_predictions": 3290
+  },
   "deepseek_deepseek_chat/ctx_k10_cot": {
     "point": {
       "n": 300,

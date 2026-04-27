@@ -188,9 +188,10 @@ def fig_overlap_comparison(gt, holdout_preds, output_dir: Path):
 
 
 def fig_context_vs_zeroshot(gt, holdout_preds, output_dir: Path):
-    """Scatter: context (CoT) accuracy vs zero-shot ablation, all models."""
-    width_in = TACL_1COL_MM * MM_TO_INCH * 1.4
-    fig, ax = plt.subplots(figsize=(width_in, 3.5))
+    """Scatter: context (CoT) accuracy vs zero-shot ablation, all models.
+    TACL 2-column width to give labels enough breathing room."""
+    width_in = TACL_2COL_MM * MM_TO_INCH * 0.7  # 119mm — wider than 1-col
+    fig, ax = plt.subplots(figsize=(width_in, 4.0))
 
     # Existing data points (from prior analysis)
     in_family = {
@@ -217,23 +218,47 @@ def fig_context_vs_zeroshot(gt, holdout_preds, output_dir: Path):
         nocot_m, _, _ = metric_with_ci(nocot_preds, gt)
         out_family[label_map.get(ms, ms)] = (cot_m, nocot_m)
 
+    # Per-label offset overrides to resolve collisions.
+    # Tuple = (dx_pts, dy_pts, ha). ha=left → label extends right; ha=right → left.
+    # Manual layout fans labels away from neighbours to keep TACL-resolution rendering clean.
+    # Each label points to its own y-row so they can't collide horizontally:
+    # ABOVE the dot (dy=+10) for half, BELOW the dot (dy=-12) for the other half,
+    # alternating to break the dense diagonal cluster.
+    # ha="left" means the label's left edge is at xytext (label extends right).
+    # ha="right" means the label's right edge is at xytext (label extends left).
+    LABEL_OFFSETS = {
+        # In-family (right side; labels extend right)
+        "Claude Sonnet 4.6": (8,   8, "left"),    # up-right (top, alone)
+        "Claude Haiku 4.5":  (8,   8, "left"),    # up-right
+        "GPT-5.2":           (8,  -8, "left"),    # down-right (clears Haiku above)
+        "Gemini 3 Pro":      (8,  -12, "left"),   # down-right (lowest)
+        # Hold-outs (left/center; labels extend with care)
+        "DeepSeek-V3":       (8,  -10, "left"),   # down-right (leftmost point, lots of room)
+        "Llama-3.3-70B":     (-8,  10, "right"),  # up-left
+        "Qwen-2.5-72B":      (8,   10, "left"),   # up-right (between Mistral and GPT-5.2 verticals)
+        "Mistral-Large":     (-8,  10, "right"),  # up-left  (away from Haiku-Sonnet column)
+    }
+
+    def _annotate(name, pt):
+        dx, dy, ha = LABEL_OFFSETS.get(name, (6, -5, "left"))
+        ax.annotate(name, pt, xytext=(dx, dy),
+                    textcoords="offset points", fontsize=7, ha=ha)
+
     for name, (ctx_acc, zs_acc) in in_family.items():
         ax.scatter(ctx_acc, zs_acc, s=60, c=OKABE_ITO["blue"], edgecolor="black",
                     linewidth=0.5, zorder=3)
-        ax.annotate(name, (ctx_acc, zs_acc), xytext=(5, -5),
-                     textcoords="offset points", fontsize=7)
+        _annotate(name, (ctx_acc, zs_acc))
     for name, (ctx_acc, zs_acc) in out_family.items():
         ax.scatter(ctx_acc, zs_acc, s=60, c=OKABE_ITO["vermilion"], edgecolor="black",
                     linewidth=0.5, zorder=3, marker="s")
-        ax.annotate(name, (ctx_acc, zs_acc), xytext=(5, -5),
-                     textcoords="offset points", fontsize=7)
+        _annotate(name, (ctx_acc, zs_acc))
 
     ax.plot([0, 1], [0, 1], color="gray", linestyle=":", linewidth=0.5, alpha=0.5)
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-    ax.set_xlabel("Accuracy with k=10 context (CoT)")
-    ax.set_ylabel("Accuracy without context / no-CoT")
-    ax.set_title("Context contribution to novelty determination", fontsize=10)
+    ax.set_xlabel("Accuracy with k=10 context (prompted CoT)")
+    ax.set_ylabel("Accuracy without CoT (no-CoT mode / zero-shot)")
+    ax.set_title("Context-and-reasoning contribution to novelty determination", fontsize=10)
     ax.legend(handles=[
         Patch(facecolor=OKABE_ITO["blue"], edgecolor="black", label="In-family"),
         Patch(facecolor=OKABE_ITO["vermilion"], edgecolor="black", label="Hold-out"),
