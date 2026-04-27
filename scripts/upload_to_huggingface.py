@@ -183,6 +183,8 @@ def main():
     p.add_argument("--version", default="v1.0", help="Dataset version tag")
     p.add_argument("--anonymous", action="store_true",
                    help="Generate anonymous version (no author info)")
+    p.add_argument("--private", action="store_true",
+                   help="Create dataset as private (visible only to owner)")
     p.add_argument("--corpus-dir", default="data/benchmark",
                    help="Directory containing corpus.jsonl")
     p.add_argument("--novex-dir", default="data/novex",
@@ -257,7 +259,7 @@ def main():
         repo_id=dataset_name,
         repo_type="dataset",
         exist_ok=True,
-        private=False,
+        private=args.private,
         token=token,
     )
     api.upload_folder(
