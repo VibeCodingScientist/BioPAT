@@ -262,7 +262,15 @@ def normalize_label(raw: str) -> str:
 
 class OpenRouterClient:
     def __init__(self, api_key: str, model: str, provider: Optional[str] = None,
-                 timeout: float = 120.0, max_retries: int = 3):
+                 timeout: float = 240.0, max_retries: int = 3,
+                 reasoning_effort: Optional[str] = None):
+        """
+        Args:
+            reasoning_effort: If set ("low"/"medium"/"high"), enable OpenRouter's
+                reasoning parameter to trigger thinking-mode output for compatible
+                models. Reasoning chain is included in output_tokens count and
+                billed at output rate.
+        """
         from openai import OpenAI
         self.client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
@@ -276,6 +284,7 @@ class OpenRouterClient:
         self.model = model
         self.provider = provider
         self.max_retries = max_retries
+        self.reasoning_effort = reasoning_effort
 
     def call(self, system: str, user: str, max_tokens: int = 1000,
              temperature: float = 0.1) -> Dict[str, Any]:
@@ -285,6 +294,14 @@ class OpenRouterClient:
                 "order": [self.provider],
                 "allow_fallbacks": False,
             }
+        if self.reasoning_effort:
+            # OpenRouter standard reasoning parameter — triggers thinking mode
+            # for reasoning-capable models. Include reasoning chain in response
+            # so we can audit it but extract only the final JSON for parsing.
+            extra_body["reasoning"] = {
+                "effort": self.reasoning_effort,
+            }
+            extra_body["include_reasoning"] = True
 
         last_text = ""
         last_provider = None
@@ -293,7 +310,17 @@ class OpenRouterClient:
         last_latency_ms = 0.0
         last_err: Optional[str] = None
 
+        # Track whether we've tried disabling the reasoning param (auto-fallback
+        # for models like QwQ-32B which are intrinsic reasoning models and
+        # reject the explicit parameter).
+        send_reasoning_param = bool(self.reasoning_effort)
+
         for attempt in range(self.max_retries):
+            current_extra = dict(extra_body)
+            if not send_reasoning_param:
+                current_extra.pop("reasoning", None)
+                current_extra.pop("include_reasoning", None)
+
             kwargs = {
                 "model": self.model,
                 "messages": [
@@ -302,7 +329,7 @@ class OpenRouterClient:
                 ],
                 "temperature": temperature,
                 "max_tokens": max_tokens,
-                "extra_body": extra_body,
+                "extra_body": current_extra,
             }
             # Skip response_format -- most OpenRouter open-weight provider endpoints
             # don't support it. Our regex JSON extractor handles markdown-fenced output
@@ -314,7 +341,18 @@ class OpenRouterClient:
             except Exception as e:
                 last_err = f"{type(e).__name__}: {e}"
                 err_str = str(e).lower()
-                # Any 400-level / format issue: retry without response_format
+                # Models that are intrinsic reasoning models (e.g. QwQ-32B)
+                # reject the `reasoning` / `enable_thinking` parameter.
+                # Auto-fallback by stripping it on subsequent retries.
+                if (
+                    "enable_thinking" in err_str
+                    or ("reasoning" in err_str and "does not support" in err_str)
+                    or "20015" in err_str
+                ):
+                    if send_reasoning_param:
+                        send_reasoning_param = False
+                        continue  # retry immediately without the param
+                # Any other 400-level / format issue: still retry (e.g. response_format)
                 if (
                     "response_format" in err_str
                     or "json_object" in err_str
@@ -322,7 +360,6 @@ class OpenRouterClient:
                     or "does not support" in err_str
                     or "400" in err_str
                 ):
-                    # Provider doesn't support json_object - retry without it on next attempt
                     pass
                 else:
                     # Backoff for 429/5xx and network issues
@@ -330,7 +367,11 @@ class OpenRouterClient:
                 continue
 
             last_latency_ms = (time.perf_counter() - t0) * 1000
-            last_text = resp.choices[0].message.content or ""
+            last_msg = resp.choices[0].message
+            last_text = last_msg.content or ""
+            # Reasoning chain is billed as output tokens by OpenRouter so
+            # token counts already reflect it; we don't need to capture it
+            # separately. The `content` field is the post-reasoning final answer.
             if resp.usage:
                 last_input_tokens = resp.usage.prompt_tokens
                 last_output_tokens = resp.usage.completion_tokens
@@ -375,10 +416,11 @@ class OpenRouterClient:
 # Worker
 # ---------------------------------------------------------------------------
 
-def run_one(client: OpenRouterClient, qid: str, system: str, user: str) -> Dict[str, Any]:
+def run_one(client: OpenRouterClient, qid: str, system: str, user: str,
+             max_tokens: int = 1000) -> Dict[str, Any]:
     if _shutdown.is_set():
         return {"qid": qid, "ok": False, "error": "shutdown signal received before call"}
-    result = client.call(system, user)
+    result = client.call(system, user, max_tokens=max_tokens)
     base = {
         "qid": qid,
         "ok": result["ok"],
@@ -419,7 +461,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--model", required=True)
     p.add_argument("--provider", default=None, help="Pinned provider (e.g. Together, Fireworks, DeepSeek)")
-    p.add_argument("--mode", choices=["ctx_k10_cot", "ctx_k10_nocot"], required=True)
+    p.add_argument("--mode", choices=["ctx_k10_cot", "ctx_k10_nocot", "ctx_k10_reasoning"], required=True)
+    p.add_argument("--reasoning-effort", default="high",
+                   help="OpenRouter reasoning effort level (low/medium/high). Only applies to --mode ctx_k10_reasoning.")
     p.add_argument("--data-dir", default="/tmp/biopat-explore/data/novex")
     p.add_argument("--corpus-path", default="/tmp/biopat-wp1/data/benchmark/corpus.jsonl")
     p.add_argument("--output-dir", default="results")
@@ -463,12 +507,26 @@ def main():
         return 0
 
     use_cot = args.mode == "ctx_k10_cot"
+    use_reasoning = args.mode == "ctx_k10_reasoning"
+    # Reasoning runs use the no-CoT prompt (model does its own reasoning).
+    # CoT prompt would double-prompt and waste tokens.
+    use_cot_prompt = use_cot and not use_reasoning
     prompts = {}
     for qid in todo:
         prompts[qid] = build_prompt(qid, queries, tier1_qrels, corpus,
-                                    with_context=True, context_k=10, use_cot=use_cot)
+                                    with_context=True, context_k=10,
+                                    use_cot=use_cot_prompt)
 
-    client = OpenRouterClient(api_key=api_key, model=args.model, provider=args.provider)
+    # Reasoning runs need much higher max_tokens (thinking chain can be 3-5K tokens)
+    effective_max_tokens = 8000 if use_reasoning else args.max_tokens
+
+    client = OpenRouterClient(
+        api_key=api_key,
+        model=args.model,
+        provider=args.provider,
+        reasoning_effort=args.reasoning_effort if use_reasoning else None,
+        timeout=240.0 if use_reasoning else 120.0,
+    )
     pred_writer = JsonlAppender(pred_path)
     log_writer = JsonlAppender(log_path)
 
@@ -489,7 +547,8 @@ def main():
     try:
         with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
             future_to_qid = {
-                executor.submit(run_one, client, qid, prompts[qid][0], prompts[qid][1]): qid
+                executor.submit(run_one, client, qid, prompts[qid][0], prompts[qid][1],
+                                effective_max_tokens): qid
                 for qid in todo
             }
             for i, future in enumerate(as_completed(future_to_qid)):

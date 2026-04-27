@@ -1,0 +1,118 @@
+{
+  "meta_llama_llama_3_3_70b_instruct": {
+    "name": "Llama-3.3-70B",
+    "mode": "ctx_k10_nocot",
+    "n": 300,
+    "confusion_matrix": {
+      "NOVEL": {
+        "NOVEL": 10,
+        "PARTIALLY_ANTICIPATED": 15,
+        "ANTICIPATED": 54
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 8,
+        "PARTIALLY_ANTICIPATED": 57,
+        "ANTICIPATED": 141
+      },
+      "ANTICIPATED": {
+        "NOVEL": 0,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 15
+      }
+    },
+    "pred_distribution": {
+      "PARTIALLY_ANTICIPATED": 206,
+      "ANTICIPATED": 15,
+      "NOVEL": 79
+    },
+    "concentration_max_class": 0.6866666666666666,
+    "concentration_top_class": "PARTIALLY_ANTICIPATED"
+  },
+  "deepseek_deepseek_chat": {
+    "name": "DeepSeek-V3",
+    "mode": "ctx_k10_nocot",
+    "n": 300,
+    "confusion_matrix": {
+      "NOVEL": {
+        "NOVEL": 11,
+        "PARTIALLY_ANTICIPATED": 44,
+        "ANTICIPATED": 107
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 7,
+        "PARTIALLY_ANTICIPATED": 28,
+        "ANTICIPATED": 96
+      },
+      "ANTICIPATED": {
+        "NOVEL": 0,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 7
+      }
+    },
+    "pred_distribution": {
+      "NOVEL": 162,
+      "PARTIALLY_ANTICIPATED": 131,
+      "ANTICIPATED": 7
+    },
+    "concentration_max_class": 0.54,
+    "concentration_top_class": "NOVEL"
+  },
+  "qwen_qwen_2_5_72b_instruct": {
+    "name": "Qwen-2.5-72B",
+    "mode": "ctx_k10_nocot",
+    "n": 300,
+    "confusion_matrix": {
+      "NOVEL": {
+        "NOVEL": 4,
+        "PARTIALLY_ANTICIPATED": 4,
+        "ANTICIPATED": 9
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 14,
+        "PARTIALLY_ANTICIPATED": 68,
+        "ANTICIPATED": 195
+      },
+      "ANTICIPATED": {
+        "NOVEL": 0,
+        "PARTIALLY_ANTICIPATED": 0,
+        "ANTICIPATED": 6
+      }
+    },
+    "pred_distribution": {
+      "PARTIALLY_ANTICIPATED": 277,
+      "ANTICIPATED": 6,
+      "NOVEL": 17
+    },
+    "concentration_max_class": 0.9233333333333333,
+    "concentration_top_class": "PARTIALLY_ANTICIPATED"
+  },
+  "mistralai_mistral_large": {
+    "name": "Mistral-Large",
+    "mode": "ctx_k10_nocot",
+    "n": 300,
+    "confusion_matrix": {
+      "NOVEL": {
+        "NOVEL": 10,
+        "PARTIALLY_ANTICIPATED": 15,
+        "ANTICIPATED": 30
+      },
+      "PARTIALLY_ANTICIPATED": {
+        "NOVEL": 7,
+        "PARTIALLY_ANTICIPATED": 55,
+        "ANTICIPATED": 144
+      },
+      "ANTICIPATED": {
+        "NOVEL": 1,
+        "PARTIALLY_ANTICIPATED": 2,
+        "ANTICIPATED": 36
+      }
+    },
+    "pred_distribution": {
+      "PARTIALLY_ANTICIPATED": 206,
+      "NOVEL": 55,
+      "ANTICIPATED": 39
+    },
+    "concentration_max_class": 0.6866666666666666,
+    "concentration_top_class": "PARTIALLY_ANTICIPATED"
+  }
+}
