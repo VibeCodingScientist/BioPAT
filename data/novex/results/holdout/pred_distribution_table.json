@@ -1,0 +1,131 @@
+{
+  "gt_distribution": {
+    "NOVEL": 18,
+    "ANTICIPATED": 210,
+    "PARTIALLY_ANTICIPATED": 72
+  },
+  "n_gt": 300,
+  "rows": [
+    {
+      "family": "Meta Llama",
+      "model": "Llama-3.3-70B",
+      "mode": "no-CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.2633333333333333,
+      "pct_PARTIALLY_ANTICIPATED": 0.6866666666666666,
+      "pct_ANTICIPATED": 0.05,
+      "abs_deviation_from_gt": 1.2999999999999998
+    },
+    {
+      "family": "Meta Llama",
+      "model": "Llama-3.3-70B",
+      "mode": "CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.11,
+      "pct_PARTIALLY_ANTICIPATED": 0.38,
+      "pct_ANTICIPATED": 0.51,
+      "abs_deviation_from_gt": 0.37999999999999995
+    },
+    {
+      "family": "Meta Llama",
+      "model": "Llama-3.3-Nemotron-49B",
+      "mode": "reasoning",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.5233333333333333,
+      "pct_PARTIALLY_ANTICIPATED": 0.25,
+      "pct_ANTICIPATED": 0.22666666666666666,
+      "abs_deviation_from_gt": 0.9466666666666665
+    },
+    {
+      "family": "DeepSeek",
+      "model": "DeepSeek-V3",
+      "mode": "no-CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.54,
+      "pct_PARTIALLY_ANTICIPATED": 0.43666666666666665,
+      "pct_ANTICIPATED": 0.023333333333333334,
+      "abs_deviation_from_gt": 1.3533333333333333
+    },
+    {
+      "family": "DeepSeek",
+      "model": "DeepSeek-V3",
+      "mode": "CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.07333333333333333,
+      "pct_PARTIALLY_ANTICIPATED": 0.5733333333333334,
+      "pct_ANTICIPATED": 0.35333333333333333,
+      "abs_deviation_from_gt": 0.6933333333333334
+    },
+    {
+      "family": "DeepSeek",
+      "model": "DeepSeek-R1-0528",
+      "mode": "reasoning",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.48333333333333334,
+      "pct_PARTIALLY_ANTICIPATED": 0.12666666666666668,
+      "pct_ANTICIPATED": 0.39,
+      "abs_deviation_from_gt": 0.8466666666666666
+    },
+    {
+      "family": "Alibaba Qwen",
+      "model": "Qwen-2.5-72B",
+      "mode": "no-CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.056666666666666664,
+      "pct_PARTIALLY_ANTICIPATED": 0.9233333333333333,
+      "pct_ANTICIPATED": 0.02,
+      "abs_deviation_from_gt": 1.3666666666666667
+    },
+    {
+      "family": "Alibaba Qwen",
+      "model": "Qwen-2.5-72B",
+      "mode": "CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.006666666666666667,
+      "pct_PARTIALLY_ANTICIPATED": 0.37666666666666665,
+      "pct_ANTICIPATED": 0.6166666666666667,
+      "abs_deviation_from_gt": 0.27333333333333326
+    },
+    {
+      "family": "Alibaba Qwen",
+      "model": "QwQ-32B",
+      "mode": "reasoning",
+      "n": 290,
+      "n_failures": 10,
+      "pct_NOVEL": 0.4517241379310345,
+      "pct_PARTIALLY_ANTICIPATED": 0.2,
+      "pct_ANTICIPATED": 0.3482758620689655,
+      "abs_deviation_from_gt": 0.7834482758620689
+    },
+    {
+      "family": "Mistral",
+      "model": "Mistral-Large",
+      "mode": "no-CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.18333333333333332,
+      "pct_PARTIALLY_ANTICIPATED": 0.6866666666666666,
+      "pct_ANTICIPATED": 0.13,
+      "abs_deviation_from_gt": 1.14
+    },
+    {
+      "family": "Mistral",
+      "model": "Mistral-Large",
+      "mode": "CoT",
+      "n": 300,
+      "n_failures": 0,
+      "pct_NOVEL": 0.006666666666666667,
+      "pct_PARTIALLY_ANTICIPATED": 0.056666666666666664,
+      "pct_ANTICIPATED": 0.9366666666666666,
+      "abs_deviation_from_gt": 0.47333333333333333
+    }
+  ]
+}
