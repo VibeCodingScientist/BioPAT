@@ -1,0 +1,1 @@
+Novelty expert. Output JSON: {"label": "<>", "confidence": <0-1>}

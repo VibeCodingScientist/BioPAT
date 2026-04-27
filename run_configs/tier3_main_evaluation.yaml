@@ -1,0 +1,43 @@
+# Configuration that produced the main Tier 3 evaluation results
+# (the 3 annotator models also evaluated against their own ground truth).
+#
+# Result files:
+#   data/novex/results/checkpoints/t3_openai_gpt_5.2_ctx.json
+#   data/novex/results/checkpoints/t3_anthropic_claude_sonnet_4_6_ctx.json
+#   data/novex/results/checkpoints/t3_google_gemini_3_pro_preview_ctx.json
+#   ... and corresponding _zs.json variants
+
+tier: 3
+mode: ctx_k10  # also run with mode=zero_shot
+
+models:
+  - provider: openai
+    model_id: gpt-5.2
+    reasoning_effort: high  # OpenAI thinking via reasoning_effort
+
+  - provider: anthropic
+    model_id: claude-sonnet-4-6
+    thinking:
+      type: adaptive  # Anthropic adaptive thinking
+
+  - provider: google
+    model_id: gemini-3-pro-preview
+    thinking_config:
+      thinking_level: HIGH  # Gemini high thinking
+
+# Common parameters
+temperature: 0.0
+max_tokens: 4000  # high to accommodate thinking tokens
+context_k: 10     # top-10 prior art per statement, ranked by tier1 qrels score
+seed: 42
+
+# Prompt
+system_prompt_file: prompts/tier3_system_nocot.txt
+user_prompt_template: prompts/tier3_user_template.txt
+
+# Evaluation set
+data_dir: data/novex
+statements_file: data/novex/statements.jsonl
+tier1_qrels_file: data/novex/qrels/tier1.tsv
+tier3_labels_file: data/novex/qrels/tier3.tsv
+corpus_file: data/benchmark/corpus.jsonl  # downloaded from GitHub Release v1.0.0

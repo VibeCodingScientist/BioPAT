@@ -1,0 +1,40 @@
+# Configuration for Tier 1 dense retrieval experiments
+# Result files:
+#   data/novex/results/checkpoints/t1_dense_BAAI_bge-base-en-v1.5.json
+#   data/novex/results/checkpoints/t1_dense_allenai_specter2_base.json
+
+tier: 1
+method: dense
+
+models:
+  - model: BAAI/bge-base-en-v1.5
+    type: general_purpose
+    dimension: 768
+
+  - model: allenai/specter2_base
+    type: biomedical_scientific
+    dimension: 768
+
+# Encoding
+batch_size: 32
+device: mps  # M1 Pro Apple Silicon; use 'cuda' if available, 'cpu' fallback
+chunk_size: 10000  # save partial cache every N docs (resumable)
+normalize_embeddings: true
+
+# Search
+top_k: 100
+similarity: dot_product  # cosine via L2-normalized vectors
+faiss_index: flat        # exact brute-force search (158K docs OK on numpy)
+
+# Evaluation
+k_values: [10, 50, 100]
+metrics:
+  - recall@k
+  - ndcg@k
+  - map
+  - paper_recall@k    # split by doc_type
+  - patent_recall@k
+
+data_dir: data/novex
+corpus_file: data/benchmark/corpus.jsonl
+qrels_file: data/novex/qrels/tier1.tsv

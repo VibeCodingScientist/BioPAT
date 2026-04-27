@@ -1,0 +1,14 @@
+{
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "provider_pinned": "Novita",
+  "mode": "ctx_k10_cot",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 946.84,
+  "input_tokens": 186746,
+  "output_tokens": 175584,
+  "estimated_cost_usd": 0.270073,
+  "finished_at": "2026-04-27T08:19:12.358608"
+}

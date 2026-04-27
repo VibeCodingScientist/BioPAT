@@ -1,0 +1,14 @@
+{
+  "model": "mistralai/mistral-large",
+  "provider_pinned": "Mistral",
+  "mode": "ctx_k10_nocot",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 358.53,
+  "input_tokens": 149134,
+  "output_tokens": 89610,
+  "estimated_cost_usd": 0.835928,
+  "finished_at": "2026-04-27T09:21:09.966349"
+}

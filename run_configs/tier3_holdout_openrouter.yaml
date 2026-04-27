@@ -1,0 +1,67 @@
+# Configuration that produces the WP1 hold-out evaluation results.
+# Tier 3 novelty classification using out-of-family models via OpenRouter.
+#
+# Purpose: hardens the evaluator-annotator overlap critique by adding
+# 3 model families (Llama / DeepSeek / Qwen / Mistral) that did NOT
+# participate in ground-truth annotation.
+#
+# Result files:
+#   results/tier3_holdout_<safe_model>_ctx_k10_cot.jsonl
+#   results/tier3_holdout_<safe_model>_ctx_k10_nocot.jsonl
+#   results/tier3_holdout_provider_log.jsonl
+
+tier: 3
+mode: ctx_k10  # also run with --mode ctx_k10_nocot for no-CoT ablation
+
+# OpenAI-compatible client pointing at OpenRouter
+api_base: https://openrouter.ai/api/v1
+api_key_env: OPENROUTER_API_KEY
+default_headers:
+  HTTP-Referer: https://github.com/VibeCodingScientist/BioPAT
+  X-Title: BioPAT-NovEx Hold-out Evaluation
+
+# Hold-out models with pinned providers (no fallbacks for reproducibility)
+models:
+  - model: meta-llama/llama-3.3-70b-instruct
+    provider: Novita
+    quantization: bf16
+    family: Meta Llama
+
+  - model: deepseek/deepseek-chat
+    provider: Novita
+    quantization: fp8
+    family: DeepSeek
+
+  - model: qwen/qwen-2.5-72b-instruct
+    provider: DeepInfra
+    quantization: fp8
+    family: Alibaba Qwen
+
+  - model: mistralai/mistral-large
+    provider: Mistral
+    quantization: bf16  # native
+    family: Mistral
+
+# Per-call request parameters
+temperature: 0.1
+max_tokens: 1000
+extra_body:
+  transforms: []           # disable middle-out compression
+  provider:
+    allow_fallbacks: false # critical for reproducibility — no silent re-routing
+
+# Concurrency / reliability
+concurrency: 5
+timeout_seconds: 120
+max_retries: 3
+backoff: exponential
+
+# Prompts (CoT and no-CoT variants)
+system_prompt_cot_file: prompts/tier3_system_cot.txt
+system_prompt_nocot_file: prompts/tier3_system_nocot.txt
+user_prompt_template: prompts/tier3_user_template.txt
+
+# Evaluation set (matches tier3_main_evaluation.yaml exactly)
+data_dir: data/novex
+context_k: 10
+seed: 42

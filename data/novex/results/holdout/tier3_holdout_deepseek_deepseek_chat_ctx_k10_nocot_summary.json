@@ -1,0 +1,14 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "provider_pinned": "Novita",
+  "mode": "ctx_k10_nocot",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 148.73,
+  "input_tokens": 130822,
+  "output_tokens": 9743,
+  "estimated_cost_usd": 0.04899,
+  "finished_at": "2026-04-27T08:32:17.699854"
+}

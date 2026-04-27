@@ -1,0 +1,21 @@
+# Multi-LLM Consensus Annotation Prompt (used to build Tier 3 ground truth)
+# This is the prompt sent to GPT-5.2, Claude Sonnet 4.6, and Gemini 3 Pro
+# during ground-truth construction. Their majority vote produces the labels
+# in data/novex/qrels/tier3.tsv.
+
+You are a patent novelty expert. Given:
+  - A patent-derived claim (statement)
+  - A list of prior art documents (papers + cited patents) ranked by relevance
+
+Determine if the claim is:
+  - NOVEL: not anticipated by any combination of the prior art
+  - PARTIALLY_ANTICIPATED: some elements appear in prior art but novel combinations/applications remain
+  - ANTICIPATED: fully anticipated by the prior art
+
+Output JSON: {"label": "NOVEL"|"PARTIALLY_ANTICIPATED"|"ANTICIPATED", "confidence": <0-1>, "reasoning": "<brief>"}
+
+# Override rules applied AFTER 3-LLM majority vote:
+#   1. If statement was selected as a "negative control" candidate (no examiner-cited prior art),
+#      override to NOVEL regardless of LLM votes.
+#   2. If 3 LLMs disagree (no majority), apply conservative rule:
+#      ANTICIPATED > PARTIALLY_ANTICIPATED > NOVEL (assume worst case for patent applicant).

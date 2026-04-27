@@ -1,0 +1,15 @@
+CLAIM: {claim_text}
+
+PRIOR ART:
+{context_or_none}
+
+Classify: NOVEL / ANTICIPATED / PARTIALLY_ANTICIPATED
+
+# Template variables:
+#   {claim_text}: from data/novex/statements.jsonl[statement_id].text
+#   {context_or_none}: top-K prior art docs from tier1_qrels, formatted as:
+#     [{doc_id}] {corpus[doc_id].title}
+#     {corpus[doc_id].text[:300]}
+#     ---
+#     [{doc_id_2}] ...
+#   If no qrels, use the literal string "None."

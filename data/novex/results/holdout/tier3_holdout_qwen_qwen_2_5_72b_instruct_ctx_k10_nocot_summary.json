@@ -1,0 +1,14 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "provider_pinned": "DeepInfra",
+  "mode": "ctx_k10_nocot",
+  "n_completed_in_session": 300,
+  "n_failures_in_session": 0,
+  "n_total_completed": 300,
+  "n_target": 300,
+  "elapsed_seconds": 736.59,
+  "input_tokens": 153283,
+  "output_tokens": 76385,
+  "estimated_cost_usd": 0.183683,
+  "finished_at": "2026-04-27T09:03:29.613298"
+}
