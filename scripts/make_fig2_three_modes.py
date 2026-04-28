@@ -182,8 +182,7 @@ ax2.text(2, 0.92, "over-predict\nNOVEL", ha="center", va="bottom",
 ax2.text(1, 0.48, "calibrated", ha="center", va="bottom",
          fontsize=8, color=OKABE_ITO["green"], style="italic", weight="bold")
 
-plt.suptitle("Tier 3 novelty determination — three modes, four out-of-family hold-out lineages",
-             fontsize=11, y=1.00)
+# suptitle intentionally omitted — supplied by the LaTeX caption.
 plt.tight_layout()
 
 out_dir = Path("/tmp/biopat-wp1/figures")

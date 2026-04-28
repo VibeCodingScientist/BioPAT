@@ -258,7 +258,7 @@ def fig_context_vs_zeroshot(gt, holdout_preds, output_dir: Path):
     ax.set_ylim(0, 1)
     ax.set_xlabel("Accuracy with k=10 context (prompted CoT)")
     ax.set_ylabel("Accuracy without CoT (no-CoT mode / zero-shot)")
-    ax.set_title("Context-and-reasoning contribution to novelty determination", fontsize=10)
+    # Title intentionally omitted — supplied by the LaTeX caption.
     ax.legend(handles=[
         Patch(facecolor=OKABE_ITO["blue"], edgecolor="black", label="In-family"),
         Patch(facecolor=OKABE_ITO["vermilion"], edgecolor="black", label="Hold-out"),

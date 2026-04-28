@@ -42,9 +42,14 @@ MODEL_COLORS = {
 }
 
 MODEL_KEY_TO_LABEL = {
+    # Hyphen-form (used in tier1_table.json etc.)
     "gpt-5.2": "GPT-5.2",
     "claude-sonnet-4-6": "Claude Sonnet 4.6",
     "gemini-3-pro-preview": "Gemini 3 Pro",
+    # Underscore-form (used in confusion_matrices.json keys)
+    "gpt_5.2": "GPT-5.2",
+    "claude_sonnet_4_6": "Claude Sonnet 4.6",
+    "gemini_3_pro_preview": "Gemini 3 Pro",
 }
 
 MODEL_ORDER = ["gpt-5.2", "claude-sonnet-4-6", "gemini-3-pro-preview"]
@@ -348,7 +353,7 @@ class NovExFigureGenerator:
         ax.set_xticklabels(labels, fontsize=8)
         ax.set_ylabel("Recall@10")
         ax.set_ylim(0, max(patent_vals) * 1.15)
-        ax.set_title("Paper vs Patent Recall@10 by Method")
+        # Title intentionally omitted — supplied by the LaTeX caption.
         ax.legend(loc="upper right", frameon=False)
 
         fig.tight_layout()
@@ -561,8 +566,8 @@ class NovExFigureGenerator:
                     ax.text(j, i, f"{count}\n({pct:.0%})", ha="center", va="center",
                             fontsize=8, color=text_color)
 
-        fig.suptitle("Tier 3: Confusion Matrices (With Context)", fontsize=12)
-        fig.tight_layout(rect=[0, 0, 0.92, 0.92])
+        # suptitle intentionally omitted — supplied by the LaTeX caption.
+        fig.tight_layout(rect=[0, 0, 0.92, 1.0])
         cbar = fig.colorbar(im, ax=axes, shrink=0.8, pad=0.04)
         cbar.set_label("Row-Normalized", fontsize=9)
         self._save(fig, out)
